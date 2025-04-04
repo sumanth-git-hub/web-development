@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    font-family: "Courier Prime", monospace;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+}
+ol { line-height: 150%;
+}
+body { font-family: sans-serif;
+}
+img { width: 100%; 
+    max-width: 600px;
+}
+h2, h3, code, li, a, .color{
+    color: yellowgreen;
+}
+::marker{
+    color: white;
+    font-weight: 900;
+}
+a:hover {
+    color: orange;
+}
+[falseAttribute="create-false-attribute"] {
+    background-color: red;
+}
+[title="HyperText Markup Language"]:hover {
+    color: orange;
+    cursor: pointer;
+}
+#unique-id:hover {
+    color: orange;
+    cursor: pointer;
+    /* pointer-events: none; */
+}

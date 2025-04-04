@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", 'Courier New', Courier, monospace;
+}
+body {
+    background-color: #191919;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+} */
+ main {
+    width: 100%;
+    max-width: 600px;
+ }
+h1 {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+h1 span {
+    color: #61DAFB;
+    display: inline-flex;
+    align-items: center;
+}
+h1 span::after {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: #61DAFB;
+}
+.tool-tip-container {
+    border: 1px solid #fff;
+    width: 100%;
+    max-width: 518px;
+    /* height: 237px; */
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px 64px 30px;
+    margin-inline: auto;
+}
+.tool-tip-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    gap: 20px;
+    justify-content: space-between;
+    /* cursor: pointer; */
+    position: relative;
+}
+.tool-tip-icon img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+}
+.mango-db {
+    color: #47A248;
+}
+.express-js {
+    color: #FFFFFF;
+}
+.react-js {
+    color: #61DAFB;
+}
+.nodejs {
+    color: #8CC84B;
+}
+.angular-js {
+    color: #DD1B16;
+}
+.tool-tip {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: -16px;
+    background-color: #47A248;
+    border-radius: 24px;
+    padding: 8px 14px;
+    margin-left: -5px;
+    /* visibility: hidden; */
+    opacity: 0;
+    /* transition: all 0.2s ease-in-out; */
+    transition: top 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.tool-tip span {
+    position: relative;
+    z-index: 1;
+}
+.tool-tip-icon:hover .tool-tip {
+    top: -50px;
+    /* visibility: visible; */
+    opacity: 1;
+}
+.tool-tip::after {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: inherit;
+    transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    bottom: -12px;
+}
+.mango-db .tool-tip {
+    background-color: #47A248;
+}
+.express-js .tool-tip {
+    background-color: #FFFFFF;
+    color: #191919;
+}
+.react-js .tool-tip {
+    background-color: #61DAFB;
+    color: #191919;
+}
+.nodejs .tool-tip {
+    background-color: #8CC84B;
+    color: #191919;
+}
+.angular-js .tool-tip {
+    background-color: #DD1B16;
+    color: #191919;
+}
+@media screen and  (max-width: 600px) {
+    .tool-tip-container {
+        padding-inline: 16px;
+    }
+}

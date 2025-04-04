@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="time-format-convert.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Time Stamp</title>
+    <script src="time-format-convert.js" defer></script>
+</head>
+<body>
+    <p>Enter a Timestamp</p>
+    <form class="form">
+        <input class="input" type="number" placeholder="Enter the Time in Milliseconds" value="0">
+        <button class="button">Convert</button>
+    </form>
+    <div class="container">
+        <p class="local-format">Local Zone: <span></span></p>
+        <p class="utc">UTC Zone: <span></span></p>
+        <p class="iso">ISO Zone: <span></span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>How To Create Drag & Drop Feature</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 draggable="true" id="heading-component">Create Drag and Drop Feature&nbsp;&nbsp;<i class="fa-solid fa-grip-vertical"></i></h1>
+    <div id="club-together" class="dropzone"></div>
+    <main class="container">
+        <div id="left" class="dropzone">
+            <div class="list" draggable="true" id="item1">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 1
+            </div>
+            <div class="list" draggable="true" id="item2">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 2
+            </div>
+            <div class="list" draggable="true" id="item3">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 3
+            </div>
+            <div class="list" draggable="true" id="item4">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 4
+            </div>
+        </div>
+        <div id="right" class="dropzone"></div>
+    </main>
+</body>
+</html>

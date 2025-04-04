@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+#span-tag {
+    background-color: rgb(155, 255, 127);
+}
+.only-width-and-height {
+    height: 500px;
+    width: 400px;
+}
+.only-width-and-height-one p,img{
+ min-height: 300px;
+ /* overflow-y: auto; */
+ width: 200px;
+ background-color: aquamarine;
+}
+.only-width-and-height-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.min-content {
+    width: min-content;
+    background-color: cadetblue;
+}
+.max-content {
+    width: max-content;
+    background-color: aqua;
+}

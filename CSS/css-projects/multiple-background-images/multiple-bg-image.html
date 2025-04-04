@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple images in Background</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    .background-image {
+    background-image: url('mouse-painted-vintage-car-racing-old-vintage.png'),url('https://images.unsplash.com/photo-1604940500627-d3f44d1d21c6');
+    padding: 20px;
+    background-position: left bottom, left top;
+    background-size: 40vw, cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    /* min-height: 100vh; */
+    color: white;
+    background-attachment: scroll;
+}
+.background-image p {
+    padding-bottom: 50vh;
+    color: yellow;
+}
+.background-image h2 {
+    padding-top: 400px;
+}
+@media screen and (max-width: 500px) {
+    .background-image {
+        background-size: 100vw, cover;
+    }
+    .background-image h2 {
+    padding-top: 0;
+}
+    .background-image p {
+        padding-bottom: 55vh;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <h2> Multiple Background Images</h2>
+        
+        <p>The left positioned image should be considered as the first and the background covered image as a second then only we can expect the background like this.
+        </p>
+    </div>
+</body>
+</html>

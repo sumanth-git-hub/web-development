@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Convergence:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Test Accordion and Dark Mood</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js" defer></script> -->
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins",'Courier New', Courier, monospace;
+        }
+        :root {
+            --primary-color: #639fd1a3;
+            --secondary-color: #fff; 
+            --box-shadow: 0 2px 20px 2px rgba(227, 230, 236, 0.6);
+            --font-color: #222;
+        }
+        .dark-theme {
+            --primary-color: #000000;
+            --secondary-color: #000000; 
+            --box-shadow: 0 2px 20px 2px #0b162cd6;
+            --font-color: #fff;
+        }
+        body {
+            background-color: var(--primary-color);
+            color: var(--font-color);
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto 20px;
+        }
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: "Convergence", 'Courier New', Courier, monospace;
+        }
+        .accordion-section {
+            box-shadow: var(--box-shadow);
+            margin-block: 10px;
+            border-radius: 10px;
+        }
+        .accordion-section .question-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .question-section h3 {
+            font-weight: 500;
+        }
+        .question-section i {
+            font-size: 20px;
+            transition: all 0.2s ease-in;
+        }
+        .question-section i:hover {
+            color: #fb0; 
+        }
+        .question-section.add-color {
+            color: #fb0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0; 
+        }
+        .question-section.add-color i {
+            transform: rotate(180deg);
+        }
+        h3::before {
+            content: '';
+            display: inline-block;
+            width: 3px;
+            height: 25px;
+            background-color: #fb0;
+            margin: 0px 10px 0px 0px;
+            vertical-align: middle;
+        }
+        .accordion-section .accordion-answer-section {
+            /* padding: 10px 20px 20px; */
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background-color: var(--secondary-color);
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+        .accordion-answer-section.display-answer {
+            max-height: 200px; /* Adjust this value based on your content */
+        }
+        .accordion-answer-section p{
+         margin-block: 10px 20px;
+         padding-inline: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+        .navigation-bar{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+     </style>
+</head>
+<body> 
+    <header>
+        <nav class="navigation-bar">
+            <i class="fa-regular fa-moon"></i>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>What is Array in JavaScript?</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>An array in JavaScript is an object used to store an ordered collection of data. It can hold elements of different data types, including numbers, strings, booleans, objects, and even other arrays. </p>
+            </div>
+        </div>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>What is Array in JavaScript?</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>An array in JavaScript is an object used to store an ordered collection of data. It can hold elements of different data types, including numbers, strings, booleans, objects, and even other arrays. </p>
+            </div>
+        </div>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>What is Array in JavaScript?</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>An array in JavaScript is an object used to store an ordered collection of data. It can hold elements of different data types, including numbers, strings, booleans, objects, and even other arrays. </p>
+            </div>
+        </div>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>What is Array in JavaScript?</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>An array in JavaScript is an object used to store an ordered collection of data. It can hold elements of different data types, including numbers, strings, booleans, objects, and even other arrays. </p>
+            </div>
+        </div>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>What is Array in JavaScript?</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>An array in JavaScript is an object used to store an ordered collection of data. It can hold elements of different data types, including numbers, strings, booleans, objects, and even other arrays. </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let allQuestions = document.querySelectorAll('.question-section');
+        const switchButton = document.querySelector('.navigation-bar');
+        let switchDark = localStorage.getItem('dark-theme')
+
+        allQuestions.forEach((eachClick) => {
+            eachClick.addEventListener('click', (e) => {
+                eachClick.nextElementSibling.classList.toggle('display-answer');
+                eachClick.classList.toggle('add-color');
+            });
+        });
+
+        const enableDarkMode = () => {
+            document.body.classList.add('dark-theme')
+            localStorage.setItem('dark-theme', 'active')
+            switchButton.children[0].classList.add('fa-sun');
+            switchButton.children[0].classList.remove('fa-moon');
+
+        }
+        const disableDarkMode = () => {
+            document.body.classList.remove('dark-theme')
+            localStorage.setItem('dark-theme', null)
+            switchButton.children[0].classList.remove('fa-sun');
+            switchButton.children[0].classList.add('fa-moon');
+        }
+        if(switchDark === "active")enableDarkMode()
+        
+        switchButton.addEventListener('click', () => {
+            switchDark = localStorage.getItem('dark-theme')
+            if(switchDark !== "active"){
+                enableDarkMode()
+            }
+            else{
+                disableDarkMode()
+            }
+        })
+
+    </script>
+</body>
+</html>

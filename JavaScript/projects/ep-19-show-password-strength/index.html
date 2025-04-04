@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>How To Show Password Strength</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main-section">
+        <div class="text-content">
+            <h1>Check Password Strength</h1>
+            <p>Using HTML, CSS and JavaScript</p>
+        </div>
+        <div class="container">
+    
+            <section class="password-section">
+                <input type="password" id="user-password" placeholder="Enter the Password"><span class="hide-show"><i class="fa-solid fa-eye-slash"></i></span>
+            </section>
+            <span class="password-status"></span>
+            <span class="copy-password" title="copy password"><i class="fa-solid fa-clone"></i></span>
+            
+            <button class="generate-password" onclick="generatePassword()">Generate Password</button>
+        </div>
+    </main>
+</body>
+</html>

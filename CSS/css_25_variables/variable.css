@@ -1,0 +1,52 @@
+:root {
+    --change-pink-color: #6f0ac2;
+    --chnage-green-color: #e36810;
+    --change-purple-color: #e0ebc7;
+    --change-radius: 15px;
+}
+* {
+    box-sizing: border-box;
+    font-family: serif;
+    margin: 10px;
+}
+.button {
+    padding: 10px 15px;
+    border-radius: var(--change-radius);
+    border: 1px solid var(--change-pink-color);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    border: 1px solid var(--change-pink-color, rgb(240, 29, 14));
+    padding: 10px;
+    border-radius: var(--change-radius);
+    color: var(--change-pink-color);
+}
+span, b {
+    color: var(--chnage-green-color);
+    margin: 0;
+}
+code {
+    color: var(--chnage-green-color);
+    font-weight: 500;
+    margin: 0;
+}
+.previous-button {
+    background-color: var(--chnage-green-color);
+}
+.next-button {
+    background-color: var(--change-pink-color);
+}
+h2 {
+   color: var(--chnage-green-color);
+}
+.first-conatiner {
+    background-color: var(--change-purple-color);
+    border-radius: var(--change-radius);
+    padding: 10px;
+}
+.second-conatiner {
+    background-color: var(--change-purple-color);
+    border-radius: var(--change-radius);
+    padding: 10px;
+}

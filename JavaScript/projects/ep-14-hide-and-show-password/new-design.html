@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new-style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Convergence:regular" rel="stylesheet" />
+    <title>Hide And Show Password On Website With FLoating Placeholder</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<main class="sign-up-section">
+    <div class="content-section">
+        <h1>Show <span>/</span> Hide </h1>
+        <p>Password by using HTML, CSS and JavaScript <span>!!</span></p>
+    </div>
+    <div class="form">
+        <input type="text" id="email" class="form-input" autocomplete="off" placeholder="">
+        <label for="email" class="form-label">Email</label>
+    </div>
+    <div class="form">
+        <input type="password" id="password-section" class="form-input" autocomplete="off" placeholder="">
+        <label for="password-section" class="form-label">Password</label>
+        <i class="fa-solid fa-eye-slash" id="closed"></i>
+    </div>
+</main>
+
+<script>
+
+    let passwordSection = document.getElementById('password-section');
+    const closedIcon = document.getElementById('closed');
+
+    closedIcon.addEventListener('click', () => {
+        if(passwordSection.type === "password"){
+            passwordSection.type = "text"
+            closedIcon.classList.add('fa-eye')
+            closedIcon.classList.remove('fa-eye-slash')
+        }
+        else{
+            passwordSection.type = "password"
+            closedIcon.classList.remove('fa-eye')
+            closedIcon.classList.add('fa-eye-slash')
+        }
+    })
+
+</script>
+</body>
+</html>

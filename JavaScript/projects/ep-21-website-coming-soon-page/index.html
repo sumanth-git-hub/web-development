@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>How To Make A Website Coming Soon Page Using HTML CSS & JavaScript</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-content">
+        <a href="#"><img src="./images-folder/car-tech-logo.png" alt="cartech-logo"></a>
+
+        <div class="text-content">
+            <p>Website is Under Maintenance</p>
+            <h1>We're <span>Launching</span> Soon!</h1>
+            <div class="launching-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+            <button>Know more &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <img src="./images-folder/rocket.png" alt="rocket">
+        <!-- <i class="fa-solid fa-car-side"></i> -->
+         <img src="./images-folder/move-machine.png" alt="move-machine">
+    </main>
+    <script>
+        const countDownEnds  = new Date("mar 18, 2025 00:30:00").getTime();
+        const runTimer = setInterval( function() {
+            const userTime = new Date().getTime();
+            const calculateTime = countDownEnds - userTime;
+
+            const days = Math.floor(calculateTime /(1000 * 60 * 60 *24));
+            const hours = Math.floor((calculateTime % (1000 * 60 *60  *24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((calculateTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((calculateTime % (1000 * 60)) / 1000);
+
+
+            if(calculateTime < 0 ) {
+                clearInterval(runTimer)
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+            }
+            if(days < 10){
+                document.getElementById("days").innerText = "0" + days;
+            }
+            else {
+                document.getElementById("days").innerText = days;
+            }
+                 
+
+                if(hours < 10){
+                    document.getElementById("hours").innerText = "0" + hours;
+                    
+                }
+                else {
+                    document.getElementById("hours").innerText = hours;
+                }
+                if(minutes < 10){
+                    document.getElementById("minutes").innerText = "0" + minutes;
+                }
+                else {
+                    document.getElementById("minutes").innerText = minutes;
+                }
+                if(seconds < 10){
+                    document.getElementById("seconds").innerText = "0" + seconds;
+                }
+                else{
+                    document.getElementById("seconds").innerText = seconds;
+                }
+            
+        }, 1000);
+        // console.log(calculateTime /1000/60/60/24);
+    </script>
+</body>
+</html>

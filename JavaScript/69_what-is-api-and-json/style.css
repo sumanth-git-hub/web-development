@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    background-color:  #0d0d0d;
+}
+h1 {
+    color: white;
+}
+img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-top: 10px;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+}

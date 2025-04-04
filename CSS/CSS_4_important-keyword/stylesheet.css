@@ -1,0 +1,23 @@
+/* #html {
+    background-color: coral;
+}
+.html {
+    background-color: cadetblue;
+}
+li {
+    background-color: greenyellow;
+}
+li {
+    background-color: orange;
+}
+li {
+    background-color: purple;
+} */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}

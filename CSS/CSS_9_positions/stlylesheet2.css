@@ -1,0 +1,27 @@
+.js-element {
+    background-color: blueviolet;
+    /* position:fixed;
+    inset: 100px; */
+}
+.css-element {
+    background-color: rgb(200, 78, 17);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+}
+
+ul {
+    position: relative;
+    background-color: cadetblue;
+    right: 10px;
+    left: 10px;
+}
+header{
+    position: sticky;
+    background-image: linear-gradient(to right, red, blueviolet);
+    text-align: center;
+    top: 0;
+    padding: 10px;
+    margin: 0;
+}

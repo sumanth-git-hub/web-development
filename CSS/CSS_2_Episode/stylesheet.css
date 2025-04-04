@@ -1,0 +1,54 @@
+.html {
+    color: red;
+}
+.css {
+    color:blue;
+}
+.javascript {
+    color: #e3dc05;
+}
+.react {
+    color: #087ea4;
+}
+.tailwind {
+    color: #38bdf8;
+}
+
+li {
+    font-weight: 600;
+}
+
+#html {
+    font-family: monospace;
+}
+#css {
+    font-family: cursive;
+}
+#javascript {
+    font-family: fantasy;
+}
+#react {
+    font-family: georgia;
+}
+#tailwind {
+    font-family: verdana;
+}
+
+[class="subheading"] {
+    font-style: oblique;
+    background: turquoise;
+}
+/* ul p {
+    color: green;
+} */
+
+list p {
+    color: green;
+}
+a {
+    text-decoration: none;
+    color: brown;
+}
+.list:hover {
+    color: #fa0;
+}

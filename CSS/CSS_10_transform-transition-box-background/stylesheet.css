@@ -1,0 +1,26 @@
+.box {
+   width: 300px;
+   height: 200px;
+   background-color: khaki;
+   /* opacity: 0.5; */
+   box-shadow: chocolate inset 0px 0px 20px 10px;
+   border-radius: 10px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   /* transform: translate(-50%, -50%); */
+   /* transform: translate(-50%, -50%) rotate(10deg) scale(1.2); */
+   /* transform: scale(2); */
+   /* transform: translate(100%, 100%); */
+   /* transform-origin: 0% 0%; */
+   /* transform: rotate(45deg); */
+   /* transform: translate(100px); */
+   /* margin-top: 100px; */
+   transition: transform 300ms;
+}
+
+.box:hover {
+   transform: scale(1.5) translate(-35%, -35%);
+   /* transform: rotate(10deg)  scale(1.5) translate(-35%, -35%); */
+   cursor: pointer;
+}

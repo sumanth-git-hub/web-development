@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inika:regular,700" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Quiz Website Project Using HTML, CSS and JavaScript</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header-section">
+        <img src="./small-logo.png" alt="quiz-page-logo" class="display-logo" onclick="(location.reload())">
+    </header>
+    <section class="entry-page">
+        <img src="./large-logo.png" alt="logo">
+        <button class="start-button">Start Now >>></button>
+    </section>
+    <!-- <audio controls="" autoplay="" loop="">
+        <source src="./3fav music ringtone.mp3" type="audio/mpeg">
+        Note: Use Google Chrome Browser to play Audio
+        </audio> -->
+    <div class="quiz-container">
+        <h1 class="main-heading">Quiz Project <span class="timer">00:15</span></h1>
+        <div class="line-element"></div>
+        <div class="main-progress-section">
+            <div class="progress-bar-container">
+                <div class="progress-pie"></div>
+            </div><div class="left-line"><span class="indicate-right">29</span></div>
+            <div class="right-line"><span class="indicate-wrong">29</span></div><br>
+            <!-- <p class="be-with-progress-bar">Hello</p> -->
+              </div>
+              <!-- <figure class="charts">
+                <div class="pie"></div>
+                <div class="pie-donut"></div>
+              </figure> -->
+              <div class="chart-container">
+                <div class="progress-circle">
+                    <span class="percentageValue">0%</span>
+              </div>
+                <span class="scoreTextLabel">Your score 0 out of 5</span>
+              </div>
+        <div class="quiz-app">
+            <h2 id="question-element">Questions goes here</h2>
+            <!-- <h2 id="create-card"></h2> -->
+            <div class="answer-buttons">
+                <button class="choose-answer" id="icons-flex">Answer 1 <div><img src="./correct.png" alt="correct-icon" class="correct-icon"><span>You chose<img src="./wrong.png" alt="wrong-icon" class="wrong-icon"></span></div></button>
+                <button class="choose-answer" id="icons-flex">Answer 2 <div><img src="./correct.png" alt="correct-icon" class="correct-icon"><span>You chose<img src="./wrong.png" alt="wrong-icon" class="wrong-icon"></span></div></button>
+                <button class="choose-answer" id="icons-flex">Answer 3 <div><img src="./correct.png" alt="correct-icon" class="correct-icon"><span>You chose<img src="./wrong.png" alt="wrong-icon" class="wrong-icon"></span></div></button>
+                <button class="choose-answer" id="icons-flex">Answer 4 <div><img src="./correct.png" alt="correct-icon" class="correct-icon"><span>You chose<img src="./wrong.png" alt="wrong-icon" class="wrong-icon"></span></div></button>
+            </div>
+            <div class="bottom-section"><p class="question-counts">1 Out of 5 Questions</p><button id="next-button">Next</button></div>
+        </div>
+    </div>
+    <footer class="footer-element">Authored by Sumanth Hindu ❤️ <cite>reference source: <a href="https://www.figma.com/design/BzNsm1i2Mn2vhhx3iuFvrg/Quiz-Time?node-id=4-238&node-type=frame&t=YvxjbtPQxNk3a5M7-0" target="_blank">figma</a></cite></footer>
+</body>
+</html>

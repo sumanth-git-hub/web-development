@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", 'Courier New', Courier, monospace;
+}
+body {
+    background-color: #333;
+}
+.main-section {
+    padding: 10%;
+}
+.container {
+    width: 100%;
+    /* max-width: 800px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.password-section {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 3rem;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    
+}
+.password-section input {
+    width: 90%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-inline: 10px;
+    background: none;
+}
+.password-section span {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.copy-password {
+    font-size: 48px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fa1;
+}
+.generate-password {
+    width: 100%;
+    max-width: 200px;
+    height: 3rem;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    margin-left: 20px;
+    background-color: #fa1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    cursor: pointer;
+}
+.text-content {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.text-content h1 {
+    font-size: 42px;
+}
+.password-status {
+    color: #fff;
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .text-content h1 {
+        font-size: 30px;
+    }
+    .main-section {
+        padding: 20px;
+    }
+    .password-section {
+        max-width: 300px;
+    }
+    .copy-password {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    .generate-password {
+        margin-left: unset;
+    }
+}

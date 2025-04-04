@@ -1,0 +1,46 @@
+/* /* #html {
+    background-color: coral;
+}
+.html {
+    background-color: cadetblue;
+}
+li {
+    background-color: greenyellow;
+}
+li {
+    background-color: orange;
+}
+li {
+    background-color: purple;
+} */
+
+/* a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+} */ 
+
+main {
+    height: 600px;
+}
+.parent {
+    /* width: 800px; */
+    height:50%;
+    background-color: rgb(127, 255, 0);
+}
+.one {
+    background-color: aquamarine;
+    max-width: 50%;
+    /* word-break: break-all; */
+    /* overflow: hidden; */
+}
+.two {
+    background-color: rgb(137, 188, 9);
+}
+.one-child {
+    width: 50%;
+    padding: 10px;
+    background-color: cornflowerblue;
+}

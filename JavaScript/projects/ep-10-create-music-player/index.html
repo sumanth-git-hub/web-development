@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"/>
+    <title>How To Make A Music Player</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/3-movie.png" class="song-img" />
+        <h1>3 Movie BGM</h1>
+        <p>Dhanush</p>
+<!-- removed the controls keyword from the audio tag after the task is completed without adding controls keyword audio tag won't show the UI -->
+        <audio id="song"> 
+          <source src="media/3fav music ringtone.mp3" type="audio/mpeg"/>
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div>
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <!-- onclick="playPause()" -->
+          <div id="act-button">
+            <i class="fa-solid fa-play" id="control-icon"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+
+
+body  {
+   background-color: rgb(149, 214, 182);
+   margin: 0;
+}
+main {
+   margin-left: 5vw;
+   margin-right: 5vw;
+}
+.inline-block {
+   /* position: relative; */
+   background-color: darkolivegreen;
+   /* top: 10px; */
+}
+#abv-nav {
+   margin: 0;
+   text-align: center;
+}

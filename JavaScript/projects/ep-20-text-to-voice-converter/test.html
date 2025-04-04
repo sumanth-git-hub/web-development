@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>How To Make Text To Voice Converter Using JavaScript</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-section">
+        <h1>Text to <span>Voice &nbsp;&nbsp;<i class="fa-solid fa-volume-high"></i></span> Converter</h1>
+        <textarea class="note-pad" contenteditable="plaintext-only" placeholder="Write or paste anything here!"></textarea>
+        <div class="counter-section"><p>Characters:&nbsp;<span class="char-count">0</span></p> <p>Words:&nbsp;<span class="word-count">0</span></p></div>
+        <div class="row">
+            <select></select>
+            <button class="voice-button"><i class="fa-solid fa-play"></i><span>&nbsp;&nbsp;Listen</span></button>
+        </div>
+    </main>
+    <script>
+        const notePadContentSection = document.querySelector('.note-pad');
+        const charactersCount = document.querySelector('.char-count');
+        const wordCount = document.querySelector('.word-count');
+        const voiceButton = document.querySelector('.voice-button');
+
+        let listenVoice = new SpeechSynthesisUtterance();
+       
+
+        notePadContentSection.addEventListener('input', () => {
+            charactersCount.innerText = notePadContentSection.value.replace(/\n/g, '').length;
+
+            const splitWords = notePadContentSection.value.replace(/\s+/g, " ").trim().split(" ");
+
+            wordCount.innerText = splitWords.length;
+
+            if(splitWords[0] === ""){
+                wordCount.innerText = 0;
+            }
+            storeData();
+        });
+
+        const storeData = ()=> {
+            localStorage.setItem('notePadBody', notePadContentSection.value);
+            localStorage.setItem('charCount', charactersCount.innerText);
+            localStorage.setItem('countWords', wordCount.innerText);
+        };
+
+        function fetchData() {
+            charactersCount.innerText = localStorage.getItem('charCount');
+            wordCount.innerText = localStorage.getItem('countWords');
+            notePadContentSection.value = localStorage.getItem('notePadBody');
+        }
+        fetchData();
+
+        voiceButton.addEventListener('click', (e) => {
+            if(voiceButton.children[0].classList.contains('fa-play')){
+                listenVoice.text = notePadContentSection.value;
+                   window.speechSynthesis.speak(listenVoice);
+                   window.speechSynthesis.resume();
+                voiceButton.children[0].classList.add("fa-stop");
+                voiceButton.children[0].classList.remove("fa-play");
+                voiceButton.children[1].innerText = " Stop"
+            }
+            else {
+                voiceButton.children[0].classList.remove("fa-stop");
+                voiceButton.children[0].classList.add("fa-play");
+                voiceButton.children[1].innerText = " Listen";
+                window.speechSynthesis.pause();
+            }
+        });
+
+        listenVoice.addEventListener("end", () => {
+                voiceButton.children[0].classList.remove("fa-stop");
+                voiceButton.children[0].classList.add("fa-play");
+                voiceButton.children[1].innerText = " Listen";
+        });
+
+//    window.speechSynthesis.onvoiceschanged = () => {
+//                 listOfVoices = window.speechSynthesis.getVoices();
+//                 listenVoice.voice = listOfVoices[0];
+
+//                 listOfVoices.forEach((voicePath, counts) => (selectVoices.options[counts] = new Option(voicePath.name, counts)));
+//             }
+
+//             selectVoices.addEventListener('change', () => {
+//                 listenVoice.voice = listOfVoices[selectVoices.value]
+//             })
+
+        let listOfVoices = [];
+        let selectVoices = document.querySelector('select')
+
+        window.speechSynthesis.onvoiceschanged = () => {
+            listOfVoices = window.speechSynthesis.getVoices();
+            listenVoice.voice =  listOfVoices[0];
+
+            listOfVoices.forEach((nameList, counts) => (selectVoices.options[counts] = new Option(nameList.name, counts)))
+        }
+
+        selectVoices.addEventListener("change", (e) => {
+            listenVoice.voice = listOfVoices[selectVoices.value];
+        })
+    </script>
+</body>
+</html>

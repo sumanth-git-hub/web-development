@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    background-color: #111111;
+    color: white;
+    font-family: "Courier Prime", monospace;
+}
+#featured-img {
+    width: 100%;
+    max-width: 800px;
+}
+.main {
+    text-align: center;
+}

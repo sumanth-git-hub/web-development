@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: rgb(202, 200, 200);
+}
+* {
+    box-sizing: border-box;
+}
+.menu-position {
+    position: sticky;
+    top: 0;
+}
+.header-logo {
+    width: 100px;
+    float: left;
+}
+.navigation-float {
+    background-color: grey;
+}
+.navigation-float ul {
+    list-style-type: none;
+    overflow: auto;
+}
+.navigation-float li {
+    float: left;
+}
+.navigation-float li:hover {
+    background-color: orange;
+}
+.navigation-float a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.header-and-footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+.floating {
+    float: left;
+    padding: 15px;
+}
+.clearfix-for-ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.content-inside-of-float {
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+    cursor: pointer;
+}
+.container img {
+    max-width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+.container {
+    background-color: darkcyan;
+    /* display: flow-root; */
+    display: flex;
+    align-items:  flex-start;
+}
+.container .para {
+    margin-left: 10px;
+}
+
+.right {
+    margin-right: 10px;
+}
+button {
+    cursor: pointer;
+}
+.clearfix {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.clearfix img {
+    max-width: 300px;
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.center img {
+    display: block;
+    margin-inline: auto;
+}
+.boxes {
+    background-color: cadetblue;
+    margin-inline: 10PX;
+    width: 500px;
+    padding: 50px;
+    min-height: 300px;
+    float: left;
+    border: 3px solid black;
+}
+.boxes-container {
+    display: flex;
+    justify-content: center;
+}
+/* .boxes-container {
+    display: flow-root;
+} */
+.boxes-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media (max-width:550px) {
+    .container {
+        flex-wrap: wrap;
+        padding-right: 10px;    
+    }
+    .boxes-container {
+        flex-wrap: wrap;
+    }
+}

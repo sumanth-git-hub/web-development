@@ -1,0 +1,26 @@
+body {font-family: arial sans-serif;}
+.forform { margin-bottom: 10px;
+    padding: 10px 40px 10px 50px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin-right: 25vw;
+    margin-left: 35vw;
+    width: 300px;
+
+}
+.buttontag { cursor: pointer;
+    background-color: #f0c14b;
+    padding: 5px 72px 5px 72px;
+    border-radius: 5px;
+    border: 1px groove;
+}   
+#formar { margin-top: 10px;
+}
+#center { text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+form { margin-bottom: 10px;
+}
+button {
+    cursor: pointer;
+}

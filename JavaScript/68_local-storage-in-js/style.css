@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family: "Courier Prime", monospace;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+}
+ol { line-height: 150%;
+}
+body { font-family: sans-serif;
+}
+img { width: 100%; 
+    max-width:100px;
+}
+h2, h3, h4, code, li, a, .color{
+    color: yellowgreen;
+}
+::marker{
+    color: white;
+    font-weight: 900;
+}

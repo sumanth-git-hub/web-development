@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image:  linear-gradient(to left, #4800fff7, #00c3ff7c );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-parent {
+    width: 100%;
+    /* max-height: 300px; */
+    max-width: 400px;
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    /* display: none; */
+}
+.cta-button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 600;
+}
+.form-section {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color: #fff;
+    padding: 20px 40px 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.form-section.open-modal{
+    visibility: visible;
+    transform: scale(1.05);
+}
+.form-section label {
+    display: block;
+    width: 200px;
+    font-size: 16px;
+}
+.form-section input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #80808055;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+input::placeholder {
+    color: #80808066;
+}
+input:hover {
+    outline: 1px solid orange;
+    border: none;
+}
+.form-section button {
+    display: block;
+    margin-inline: auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    outline: none;
+}
+#dob::-webkit-calendar-picker-indicator{
+    background-size: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.flex-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.flex-section span {
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #0606067f;
+}
+.thanks-modal {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.thanks-modal.open-modal {
+    visibility: visible;
+    transform: scale(1.05);
+}
+[alt="tick mark"] {
+    width: 100px;
+    margin-top: -150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.thanks-modal h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+@media screen and (max-width: 700px) {
+    .thanks-modal.open-modal {
+        transform: scale(1);
+    } 
+    .form-section.open-modal{
+        transform: scale(1);
+    }
+}

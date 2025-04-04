@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <title>Display Property</title>
+</head>
+<body> 
+    <section> 
+    <div class="center">
+            <div class="image-box" id="image-box1">Box 1<br>
+                <img src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c" alt="announce" style="width:100%;">
+                <button onclick="removeElement()">Remove</button>
+            </div>
+            <div class="image-box" id="image-box2">Box 2<br>
+                <img src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c" alt="announce" style="width:100%">
+                <button onclick="hiddenVisiblity()">Hidden</button>
+            </div>
+            <div class="image-box">Box 3<br>
+                <img src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c" alt="announce" style="width:100%">
+                <button onclick="resetallElements()" >Reset All</button>
+            </div>
+        </div>
+    </section>
+        <script>
+            function removeElement() {
+                document.getElementById("image-box1").style.display = "none";
+            }
+            function hiddenVisiblity() {
+                document.getElementById("image-box2").style.visibility = "hidden";
+            }
+            function resetallElements() {
+                document.getElementById("image-box1").style.display = "block";
+                document.getElementById("image-box2").style.visibility = "visible";
+            }
+        </script>
+</body>
+</html>

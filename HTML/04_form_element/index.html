@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/Medal_Asia_insurance_award.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Form Element</title>
+</head>
+<body>
+<div>
+    <h1>Form Elements</h1>
+    <p>Explained how forms in HTML, How to connect label with input, How to submit form using button and without button, How we can integrate other websites forms in our website.</p>
+    <h2>Home Work of Form Elements</h2>
+        <label for="Search On YouTube">Search from YouTube</label>
+        <form action="https://www.youtube.com/results">
+            <input type="search" name="search_query" placeholder="Search" id="Search On YouTube"> <button>Search On YouTube</button>
+    </form>
+    <label for="Search On Flipkart">Search from Flipkart</label>
+    <form action="https://www.flipkart.com/search">
+        <input type="search" name="q" placeholder="Search on Flipkart" id="Search On Flipkart"> <button>Search On Flipkart</button>
+    </form>
+    <label for="Search On Google">Search from Google</label>
+    <form action="https://www.google.com/search">
+        <input type="search" name="q" placeholder="Search" id="Search On Google"> <button>Search On Google</button>
+    </form>  
+    <label for="Search On amazon">Search from Amazon</label>
+    <form action="https://www.amazon.in/s">
+        <input type="search" name="k" placeholder="Search" id="Search On amazon"> <button>Search On Amazon</button>
+    </form>  
+</div>
+<br>
+<div id="center"><a href="https://www.amazon.in/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/905px-Amazon_logo.svg.png" alt="amzon logo" style="width: 100px; height: 40px;"></a></div>
+        <form action="/" width="50%" class="forform">
+            <h2>Create Account</h2>
+            <div id="formar"><label for="name">Your name</label><br/>
+            <input type="text" name="name" placeholder="First and Last Name" id="name" size="35" required><br/></div>
+            <div id="formar"><label for="phone number">Mobile number</label><br/>
+            <input type="tel" name="Mobile number" placeholder="Mobile number" id="phone number" pattern="[6-9]{1}[0-9]{9}" size="35" required><br/></div>
+            <div id="formar"></div><label for="email address">Email (optional)</label><br/>
+            <input type="email" name="email address" id="email address" size="35"><br/></div>
+            <div id="formar"><label for="password">Password</label><br/>
+            <input type="password" name="password" id="password" minlength="6" maxlength="15" placeholder="at least 6 charectors" size="35"><br/></div>
+            <div id="formar"><label for="password">Agree for Terms and Conditions</label>
+            <input type="checkbox" name="Agree for Terms and Conditions" value="Yes" id="Yes" checked><label for="Yes">Yes</label></div>
+            <p style="font-size: 14px;">To verify your number, we will send you a text message with a temporary code. Message and data rates  may apply.</p>
+            <button class="buttontag">Verify mobile number</button>
+        </form>
+</body>
+</html>

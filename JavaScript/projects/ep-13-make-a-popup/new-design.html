@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="new-style.css">
+    <title>Form Submit with Popup</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <script src="new-script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+      <div class="submit-parent">
+        <button type="button" class="cta-button">Submit Your Details</button>
+      </div>  
+      <div class="form-section">
+        <div class="flex-section">
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <form action="">
+            <label for="first-name">First Name</label><input type="text" name="name" id="first-name" required placeholder="Name"><br>
+            <label for="last-name">Last Name</label><input type="text" name="last-name" id="last-name"><br>
+            <label for="mail-id">Email ID</label><input type="email" name="mail" id="mail-id" placeholder="Email ID"><br>
+            <label for="tel-no">Phone Number</label><input type="tel" name="telephone-number" id="tel-no" pattern="[6-9]{1}[0-9]{9}[0]{1}" required placeholder="Phone Number"><br>
+            <label for="dob">Date of Birth</label><input type="date" name="birth-date" id="dob"><br>
+            <button type="submit" class="action-button">Submit</button>
+        </form>
+      </div>
+      <section class="thanks-modal">
+        <div class="flex-section">
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <img src="tick-mark.png" alt="tick mark">
+        <h2>Thank You!!</h2>
+        <p>Your details has been successfully submitted</p>
+        <!-- <button class="closeButton">Close Modal</button> -->
+      </section>
+    </div>
+</body>
+</html>

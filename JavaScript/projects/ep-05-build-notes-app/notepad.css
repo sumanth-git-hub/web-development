@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito",'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body {
+    /* width: 100%;
+    height: 100vh; */
+    padding: 50px 100px;
+    background-image: linear-gradient(to left, #2675bf, #a835f0);
+}
+.main-section h1 {
+    text-align: center;
+    padding: 0 20px 20px;
+    color: #fff;
+}
+.note-pad {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    height: 500px;
+    color: black;
+    margin: auto;
+    overflow-y: auto;
+    outline: 0;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #a835f0;
+    font-size: 16px;
+    line-height: 2;
+}
+.notepad-icon {
+    color: black;
+}
+.counter-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    min-height: 30px;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    border-top: 1px solid #a835f0;
+    border-radius: 0 0 10px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 50px 20px;
+    }
+}

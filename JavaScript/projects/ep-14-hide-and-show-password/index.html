@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>How To Hide And Show Password On Website</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content-section">
+            <h1>Show <span>/</span> Hide </h1>
+            <p>Password by using HTML, CSS and JavaScript <span>!!</span></p>
+        </div>
+        
+        <section class="input-section">
+            <input type="password" name="password" id="password-section">
+            <i class="fa-solid fa-eye-slash" id="closed"></i>
+        </section>
+    </div>
+
+    <script>
+
+        const closedEye = document.getElementById('closed');
+        let passwordSection = document.getElementById('password-section')
+
+        closedEye.addEventListener('click', (e) => {
+            if(passwordSection.type === "password"){
+                 passwordSection.type = "Text"
+                 closedEye.classList.remove('fa-eye-slash')
+                 closedEye.classList.add('fa-eye')
+            }
+            else{
+                passwordSection.type = "password"
+                closedEye.classList.add('fa-eye-slash')
+                closedEye.classList.remove('fa-eye')
+            }
+               
+        })
+
+    </script>
+</body>
+</html>

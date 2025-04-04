@@ -1,0 +1,13 @@
+.inline-block {
+    background-color: aquamarine;
+    box-sizing: border-box;
+    /* height: 50vh; */
+    width: 50vw;
+    /* padding: 24px;
+    margin: 10px; */
+    /* font-size: 100%; */
+    padding: 10vw;
+    margin: 10vw;
+    border: 1vw solid black;
+    font-size: 1vw;
+}

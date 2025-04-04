@@ -1,0 +1,24 @@
+.responsive-table {
+    overflow-x: auto;
+    margin-inline: auto;
+}
+.responsive-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.responsive-table td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+.responsive-table th {
+    background-color: #04AA6D;
+}
+.responsive-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.responsive-table tr:hover {
+    background-color:#ddd;
+}
+.lines {
+    margin-block: 20px;
+}

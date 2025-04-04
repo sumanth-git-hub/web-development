@@ -1,0 +1,108 @@
+/* body {
+    margin: 0;
+} */
+.square {
+    max-width: 200px;
+    min-height: 200px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    margin: 20px;
+    box-sizing: border-box;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+.now-check-padding {
+    padding: 10px;
+    display: inline-block;
+}
+/* @media (orientation: portrait) and (max-width: 400px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media (max-width:500px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media print and (min-width:700px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+@media (min-height:400px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+}
+/* @media (min-width:700px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media (max-width:700px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media (500px <= width <= 700px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media (width <= 700px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+/* @media (orientation: portrait) and (width < 500px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .square {
+        background-color: orange;
+        border: 2px solid black;
+    }
+} */
+
+/* .digit-virat-banner {
+    width: 100%;
+    max-width: fit-content;
+}
+@media (orientation: portrait){
+    .digit-virat-banner {
+        max-width: 500px;
+    }
+} */

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+nav { 
+    text-align: center;
+}
+.parent {
+    /* background-color: crimson; */
+}
+
+.one {
+    background-image: linear-gradient(to right, #71b2ce, #babec8);
+    /* background-image: linear-gradient(to right, red,yellow,orange); */
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
+    border: 10px ridge teal;
+    min-height: 150px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0px;
+}

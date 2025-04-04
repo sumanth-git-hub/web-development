@@ -1,0 +1,43 @@
+/* #html {
+    background-color: rgb(80, 255, 185); */
+
+    body{
+        color:rgb(138, 8, 8);
+        font-family: monospace;
+    }
+    ul {
+        font-family: cursive;
+        font-weight: 700;
+        font-style: oblique;
+    }
+    button {
+        font-family: inherit;
+        color: inherit;
+        padding: 5px 10px;
+        margin: 5px 0px 5px 0px;
+        cursor: pointer;
+        background-color: orange;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 14px;
+        box-shadow: 0 2px 8px 2px rgba(255,187,0,0.48);
+    }
+
+    p.imp {
+        color: maroon;
+    }
+
+    ol {
+        background-color: darkgray !important;
+        font-size: 16px;
+    }
+
+    ol.cls {
+        background: chartreuse;
+    }
+    ol#ids {
+        background-color: blue;
+    }
+    nav {
+        text-align: center;
+    }

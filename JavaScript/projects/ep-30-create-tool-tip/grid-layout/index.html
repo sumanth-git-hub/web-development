@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Responsive Grid Layout</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="switch-section">
+            <!-- <span>Switch to Dark Mode </span> -->
+            <i class="fa-solid fa-moon"></i>
+        </nav>
+    </header>
+    <div class="intro-card">
+        <p class="first-sub-heading">Modern Fusion</p>
+        <h2>Grid Components</h2>
+        <p class="last-sub-heading">Step into the world of timeless classics as we explore iconic furniture pieces</p>
+        <button>Explore</button>
+    </div>
+    <div class="card">
+        <p class="what-is-new">What’s new</p>
+        <h2>Unleash Creativity</h2>
+        <p class="sub-title">Unleash your inner designer with our customizable furniture options, allowing you to create a space that reflects your unique vision</p>
+        <div class="image-grid">
+            <img src="./images/Image-1.png" alt="Image">
+            <img src="./images/Image-2.png" alt="Image" class="image-2">
+            <img src="./images/Image-3.png" alt="Image" class="image-3">
+        </div>
+    </div>
+    <div class="last-card">
+        <img src="./images/Image-4.png" alt="Image">
+        <div class="text-container">
+            <p class="what-is-new last-card-sub">What’s new</p>
+            <h2>Sustainable Living</h2>
+            <p class="sub-title">Explore how sustainable furniture choices can make a positive impact on the environment without compromising on style or comfort</p>
+            <a href="https://www.figma.com/design/ObQmh7H0M9P9RfwKrcjRKl/%F0%9F%A6%84-Unicorn-Email-Design-System-(Community)-(Copy)?node-id=0-1&p=f&t=7XL8ua5gMvLSSxDq-0" class="hyper-text" target="_blank">Read more</a>
+        </div>
+    </div>
+    <div class="last-card">
+        <div class="text-container">
+            <p class="what-is-new last-card-sub">What’s new</p>
+            <h2>The Art of Mixing</h2>
+            <p class="sub-title">Unlock the secrets of successful furniture mixing and learn how to effortlessly blend different styles, textures, and eras for a unique and cohesive look in your space</p>
+            <a href="https://www.figma.com/design/ObQmh7H0M9P9RfwKrcjRKl/%F0%9F%A6%84-Unicorn-Email-Design-System-(Community)-(Copy)?node-id=0-1&p=f&t=7XL8ua5gMvLSSxDq-0" class="hyper-text" target="_blank">Read more</a>
+        </div>
+        <img src="./images/Image-5.png" alt="Image" class="next-container">
+    </div>
+    <div class="four-sections">
+        <img src="./images/Image-1.png" alt="image">
+        <img src="./images/Image-6.png" alt="image">
+        <div class="content-section move-top">
+            <p class="what-is-new last-card-sub">What’s new</p>
+            <h2>Multifunctional Marvels</h2>
+            <p class="sub-title">Discover the innovative world of multifunctional furniture, where style meets practicality, offering creative solutions for maximizing space and enhancing functionality in your home</p>
+        </div>
+        <div class="content-section">
+            <p class="what-is-new last-card-sub">What’s new</p>
+            <h2>Timeless Classics</h2>
+            <p class="sub-title">Step into the world of timeless classics as we explore iconic furniture pieces that have stood the test of time, adding enduring elegance and sophistication to any interior</p>
+        </div>
+    </div>
+    <script>
+        const switchButton = document.querySelector(".switch-section");
+        let storeData = localStorage.getItem("dark-mode");
+
+        switchButton.addEventListener("click", (e) => {
+            storeData = localStorage.getItem("dark-mode");
+
+            if(storeData !== "active"){
+                enableDarkMode();
+            }
+            else {
+                disableDarkMode();
+            }
+        });
+
+        function enableDarkMode() {
+            document.body.classList.add("dark-mode");
+            switchButton.children[0].classList.add("fa-sun")
+            switchButton.children[0].classList.remove("fa-moon");
+            localStorage.setItem("dark-mode", "active")
+        }
+        if(storeData === "active")enableDarkMode();
+
+        function disableDarkMode() {
+            document.body.classList.remove("dark-mode");
+            switchButton.children[0].classList.remove("fa-sun")
+            switchButton.children[0].classList.add("fa-moon");
+            localStorage.setItem("dark-mode", null)
+        }
+
+    </script>
+</body>
+</html>

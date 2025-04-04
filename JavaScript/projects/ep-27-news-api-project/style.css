@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",'Courier New', Courier, monospace;
+}
+body {
+    /* background-image: linear-gradient(to right, #1d0000, #20205b); */
+    background-color: #fff;
+   
+}
+.main-section {
+    padding-inline: 20px;
+}
+.news-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+   
+}
+ h1 {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.news-snippet {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+.news-snippet:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.025);
+}
+.news-snippet h3 {
+    padding-block: 10px;
+    font-size: 20px;
+}
+.news-snippet .publication-date {
+    font-size: 14px;
+}
+.news-snippet .publication-date span {
+    margin-right: 10px;
+}
+.cta-button {
+    padding-top: 10px; 
+}
+.cta-button a {
+    text-decoration-line: none;
+    color: unset;
+    font-weight: 500;
+    font-size: 14px;
+    transition:  0.2s ease-in;
+    
+}
+.cta-button a:hover {
+    color: #fa1;
+    font-weight: 600;
+    
+}
+.cta-button span {
+    margin-left: 8px;
+    font-size: 13px;
+}
+.img-section {
+    flex-basis: 40%;
+    /* max-width: 400px; */
+    /* margin-inline: auto; */
+    /* background-color: #fa1; */
+    /* height: 200px;
+    overflow: hidden; */
+    overflow: hidden;
+    /* padding-block: 10px; */
+}
+.content-section {
+    flex-basis: 60%;
+}
+.img-section img {
+    width: 100%;
+    /* max-width: 400px; */
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.flex-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    /* align-items: center; */
+}
+.news-description {
+    margin-top: 20px;
+}
+@media screen and (max-width: 700px) {
+    .flex-layout {
+        flex-direction: column;
+    }
+    .cta-button a {
+        color: #fa1;
+    }
+    .img-section img {
+        height: unset;
+    }
+}

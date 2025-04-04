@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: "Courier Prime", monospace;
+    font-weight: 100;
+    background-color: black;
+    color: white;
+}
+h2, h3, code, li, .color{
+    color: yellowgreen;
+}
+::marker{
+    color: white;
+    font-weight: 900;
+}

@@ -1,0 +1,210 @@
+	header{
+		background-image: linear-gradient(to right, red, blueviolet);
+		padding: 20px;
+		position: sticky;
+		top: 0;
+		max-width: 100%;
+	}
+	#abv-nav {
+		margin: 0;
+		text-align: center;
+	}
+	body {
+		margin: 0;
+		background-image: linear-gradient(to right,rgba(11, 242, 234, 0.295), #EFEFEF)
+	}
+	main {  
+	  margin-left: 100px;  
+	  margin-right: 100px;
+		margin-top: 50px;
+	  /*background-color: #EFEFEF; */
+	  }
+	  aside {
+	  width: 30%;
+	  margin-left: 15px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	  float: right;
+	  font-style: italic;
+	  background-color: lightgray;
+	  }
+	  audio { background-color: lightgray;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;}
+	a {text-decoration: none;
+		color: blue;
+	}
+	a:hover {color: orange;
+		}
+	.article-tag {background-color: lightgray;
+		padding: 5px}
+	.secondary-article-tag {background-color: white;
+		padding:5px;}
+	.article-tag > h2, .secondary-article-tag { margin:5px;}
+	.secondary-article-tag > h3, p {margin: 4px}
+	bdi {
+		color: red;
+		font-size: 20px;
+		}
+	.fsize {color: orange;
+		font-size: 20px;}
+	blockquote { text-align: justify;
+		background-color: #edd5d3;
+		border-radius: 10px;
+		margin-right: 25px;
+		padding: 10px;}
+	button {cursor: pointer;
+		background-color: #fa0;
+		padding: 7px 40px 7px 40px;
+		border-radius: 10px;
+		font-weight: bold;
+		border: 2px groove;}
+	cite {margin-left: 15px;}
+	table, td, th { border: 2px groove;
+	border-collapse: collapse;}
+	caption { text-align: center;}
+	#center { text-align: center;}
+	code { font-family: Consolas,"courier new";
+		color: crimson;
+		background-color: #d8f2e2;
+		padding: 2px;
+		font-size: 105%;}
+	del {background-color: #f2dcda;
+		color: red;}
+	ins {color: #0407c4;
+		text-decoration: none;
+		background-color: yellow;}
+	details { background-color:#ddbee8;
+		padding: 10px;
+		border-radius: 10px;
+		cursor: pointer;}
+	.loginform{  
+		padding:10px;  
+		border:1px solid black;  
+		border-radius:10px;  
+		width:300px;
+		background-color: #e6e3e8;}
+	.formheading { background-color: #eb5b34;
+		padding: 4px;
+		text-align: center;
+		margin-top: 2px;
+		border-radius: 10px;}
+	.sub { background-color: #eb5b34;
+		padding: 7px 40px 7px 40px;
+		border-radius: 10px;
+		font-weight: bold;
+		border: 2px groove;
+		cursor: pointer;}
+	.tx {margin-left: 15px;}
+	p { line-height: 150%;
+		}
+	ul { list-style-type: square;
+		line-height: 150%;
+		}
+	#forcolor { color: #b50451;
+	font-weight: 700;}
+	kbd { border: 1px solid blue;
+	padding: 5px 10px;
+	border-radius: 5px;
+	}
+	mark {
+		background-color: #fa0;
+	}
+	meter {
+		width: 200px;
+		height: 30px;
+	}
+	
+	nav a {
+		font-size: 18px;
+		font-weight:700;
+		color: black;
+	}
+	nav {
+		text-align: center;
+	}
+	progress {
+		width: 200px;
+		height: 30px;
+	}
+	
+	.section-tag {
+		border: 1px solid blue;
+		padding: 10px;
+		margin: 10px 0px 10px 0px;
+		border-radius: 10px;
+	}
+	
+	#formar {
+		margin: 0px;
+	}
+	
+	#forstyle {
+		border: 1px solid black;
+		padding: 10px;
+		margin: 10px 0px 10px 0px;
+		border-radius: 10px;
+		background-image: linear-gradient(to left, rgb(255, 0, 0,0), rgb(255, 0, 0,1));
+		outline: 1px solid green;
+		font-family: cursive;
+	}
+	
+	#summary-tag {
+		background-image: linear-gradient(to right, #009dff, #ff0000a3);
+		font-family: monospace;
+		font-weight: 700;
+	}
+	.col{
+		background-color: orange;
+		width: 120px;
+	}
+	.col-one{
+		background-color: yellow;
+		width: 120px;
+	}
+	table, td, th  {
+		border: 1px solid green !important;
+	}
+	
+	.tfoot {
+		text-align: center;
+		font-weight: 700;
+	}
+	.text-area {
+		width: 100%;
+		max-width: 25vw;
+		font-size: 1rem;
+		box-sizing: border-box;
+		padding: .5em;
+		margin: 10px;
+	}
+	
+	#unordered-list {
+		border: 1px solid green;
+		width: 50vw;
+		box-sizing: border-box;
+	}
+	.underlined-tag {
+		text-decoration: wavy underline green;
+		color: red;
+	}
+	.listtag-disc {
+		list-style-type: disc;
+	}
+	.listtag-circle {
+		list-style-type: circle;
+	}
+	
+	.listtag-square {
+		list-style-type: square;
+	}
+	.listtag-none {
+		list-style-type: none;
+	}
+	.video-tag{
+		height: 400px;
+		width: 255px;
+		border: 1px solid black;
+	}

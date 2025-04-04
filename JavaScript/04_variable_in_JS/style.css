@@ -1,0 +1,11 @@
+:root {
+    font-size: 16px;
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+}
+
+* {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}

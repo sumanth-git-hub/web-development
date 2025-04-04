@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>7 Tasks at once place project</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar" onclick="switchFunction()">
+            <i class="fa-solid fa-moon"></i>
+        </nav>
+    </header>
+    
+    <main class="main-section">
+        
+        <div class="text-content">
+            <h3>Coming Soon!</h3>
+            <h1>Our Brand New <br>Website is On it's Way</h1>
+            <p>Subscribe for more details</p>
+            <button class="subscribe-button">Subscribe Now</button>
+        </div>
+            
+        <div class="modal">
+            <div class="paper-plane-section">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </div>
+            <div class="close-sec">
+                <i class="fa-solid fa-xmark"></i>
+               </div>
+            <form name="submit-to-google-sheet">
+                <div class="form">
+                    <input type="text" name="User Name" id="user-name" class="form-input" autocomplete="off" placeholder="" onkeyup="validateName()">
+                    <label for="user-name" class="form-label">Name</label>
+                    <span class="required-changes name-element"></span>
+                </div>
+                <div class="form">
+                    <input type="tel" name="Phone" id="phone-no" class="form-input" autocomplete="off" placeholder="" onkeyup="validatePhoneNumber()">
+                    <label for="phone-no" class="form-label">Phone Number</label>
+                    <span class="required-changes number-element"></span>
+                </div>
+                <div class="form">
+                    <input type="text" name="Email" id="user-email" class="form-input" autocomplete="off" placeholder="" onkeyup="validateEmail()">
+                    <label for="user-email" class="form-label">Email</label>
+                    <span class="required-changes mail-element"></span>
+                </div>
+                <button type="submit" class="submit-button" onclick="return submitForm()">Submit</button>
+            </form>
+        </div>
+        <div class="thanks-modal">
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-xmark new-close-circle"></i>
+            <h2>Thanks for Subscribing!</h2>
+            <p>Your details has been successfully submitted</p>
+        </div>
+        
+    </main>
+    <div id="toast-box">
+    </div>
+        <div class="accordion-section">
+            <div class="question-section">
+                <h3>Disclaimer</h3>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="accordion-answer-section">
+                <p>By signing up on this website, you agree to share certain personal information, including but not limited to your name, email address, and contact details. This information is collected to provide you with a personalized and secure experience. We are committed to protecting your privacy and will not share your information with third parties without your explicit consent, except as required by law. For more details, please refer to our Privacy Policy.</p>
+            </div>
+        </div>
+</body>
+</html>

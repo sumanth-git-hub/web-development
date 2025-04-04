@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>How To Make A Calculator?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headings">
+            <h1>Calculator</h1>
+        <h3>By using Simple JavaScript</h3>
+        </div>
+        <div class="calculator">
+            <!-- <div id="dummy-object">
+            </div> -->
+            <form> 
+                <div class="display-area">
+                    <input type="text" name="display" class="newUpdate" readonly="yes">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = ''" class="operator">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
+                    <input type="button" value="." onclick="display.value += '.'" class="operator">
+                    <input type="button" value="/" onclick="display.value += '/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="*" onclick="display.value += '*'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'" class="include operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="=" class="equal operator"> <!-- onclick="display.value = eval(display.value)"  -->
+                </div>
+            </form>
+        </div>
+         
+    </div>
+    <script>
+        // const showDate = document.getElementById('dummy-object')
+
+        // showDate.innerText = new Date().toDateString()
+
+        const equal = document.querySelector('.equal');
+        const displayElement = document.querySelector('.newUpdate');
+        equal.addEventListener('click', (e) => {
+            if(eval(displayElement.value) === undefined){
+                console.log('Fixed undefined value')
+                displayElement.value = ''
+            }
+            else{
+                displayElement.value = eval(displayElement.value)
+            }
+        })
+    </script>
+</body>
+</html>

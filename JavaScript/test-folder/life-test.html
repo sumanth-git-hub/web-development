@@ -1,0 +1,436 @@
+<h2 style="text-align: center; font-size: 1.5rem; font-weight: 700;">Issue still not resolved?</h2>
+<!-- <div class="escalationModal">
+    <button type="button"><a class="grievanceButton" href="#disclaimerModal">Escalate your Grievance</a></button>
+  </div>
+  <div id="disclaimerModal" class="overlay">
+    <div class="disclaimerModal">
+      <h2 class="headingDisclaimer">Form to Raise a Complaint</h2>
+      <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/img/Claim_Man-02%201.svg" class="complaintImg" alt="Description of image">
+      <a class="exitModalButton" href="#">&times;</a>
+      <form name="escalationComplaintFrom" class="mt-5 media768:flex flex-row flex-wrap p-1" onsubmit="event.preventDefault(); return checkFormValidity(this);">
+        <div  class="inputBox-Name-container media300:mb-8 input-form-group searchfield-input relative media768:mb-4 top-0 mr-3">
+         <input
+             type="text"
+             id="name"
+             name="person-name"
+             required
+             pattern="[a-zA-Z\s]+"
+             title="Please enter a valid name."
+             class="focus-animae w-full border border-brand-gray-2 rounded-[10px] text-base font-normal px-5 py-3  focus:border-brand-1 focus:outline-none"
+         />
+         <label for="name" class="input-label absolute top-0 left-4 text-xs text-brand-gray-3 px-1 bg-white -translate-y-[50%]">Your Name<span class="required">*</span></label>
+       </div>
+ 
+     <div  class="inputBox-email-container media300:mb-8 input-form-group searchfield-input relative media768:mb-4 top-0 mr-2">
+       <input
+           type="text"
+           id="email"
+           name="emailValid"
+           required
+           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+           title="Please enter a valid email address."
+           class="focus-animae w-full border border-brand-gray-2 rounded-[10px] text-base font-normal px-5 py-3  focus:border-brand-1 focus:outline-none"
+       />
+       <label for="email" class="input-label absolute top-0 left-4 text-xs text-brand-gray-3 px-1 bg-white -translate-y-[50%]">Email</label>
+   </div>
+ 
+   <div  class="inputBox-phoneNumber-container media300:mb-8 input-form-group searchfield-input relative media768:mb-4 top-0">
+     <input
+         type="tel"
+         id="mobileNumber"
+         name="life-form-validation"
+         required
+         pattern="^\d{10}$"
+         title="Please enter a valid 10-digit phone number."
+         maxlength="10"
+         class="focus-animae w-full border border-brand-gray-2 rounded-[10px] text-base font-normal px-5 py-3  focus:border-brand-1 focus:outline-none"
+     />
+     <label for="mobileNumber" class="input-label absolute top-0 left-4 text-xs text-brand-gray-3 px-1 bg-white -translate-y-[50%]">Phone Number<span class="required">*</span></label>
+ </div>
+ <div  ng-show="policyNumber" class="inputBox-policyNumber-container input-form-group searchfield-input relative mb-4 top-0">
+   <input
+        required
+       type="text"
+       id="policyNumber"
+       name="policy-Number"
+       required
+       pattern="^[a-zA-Z0-9]+$"
+       title="Please enter a valid policy number."
+       class="focus-animae w-full border border-brand-gray-2 rounded-[10px] text-base font-normal px-5 py-3  focus:border-brand-1 focus:outline-none"
+   />
+   <label for="policyNumber" class="absolute top-0 left-4 text-xs text-brand-gray-3 px-1 bg-white -translate-y-[50%]">Policy Number/ Claim Number<span class="required">*</span></label>
+ </div>
+
+ <div  ng-show="complaintDescription" class="inputBox-container input-form-group searchfield-input relative mb-2 top-0">
+  <textarea
+      type="text"
+      id="complaintDescription"
+      name="complaint-Description"
+      required
+      minlength="10"
+      title="Please enter at least 10 characters."
+      class="focus-animae border border-brand-gray-2 rounded-[10px] text-base font-normal px-5 py-3  focus:border-brand-1 focus:outline-none h-40 w-96"
+  ></textarea>
+  <label for="complaintDescription" class="absolute top-0 left-4 text-xs text-brand-gray-3 px-1 bg-white -translate-y-[50%]">Complaint<span class="required">*</span></label>
+</div>
+ 
+ <div  class="inputBox-container-submit cursor-pointer text-center  pt-4 pb-4 bg-brand-1 rounded-[10px] input-form-group searchfield-input relative mb-4 top-0 w-full">
+   <button type="submit" style="width: 100%; height: 100%;">
+     <span class="font-extrabold text-base">Submit</span>
+   </button>
+ </div>
+ <div class="thankyou-image" style="display:none">
+    <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/covered.svg">
+    <p class="thankyou-message">Thank You</p>
+ </div>
+ </form>
+    </div>
+  </div> -->
+<!-- <style>
+.escalationModal {
+width: 100%;
+display: flex;
+align-items: center;
+align-content: 140px;
+justify-content: center;
+gap: 41px;
+padding: 50px;
+}
+
+.thankyou-image{
+  width: 40%;
+    height: auto;
+    position: relative;
+    left: 9em;
+    top: 5em;
+}
+
+.grievanceButton {
+gap: 10px;
+display: flex;
+width: 232px;
+height: 56px;
+padding: 5px 10px;
+border-radius: 4px;
+background-color: #fb0 !important;
+border-color: #fb0;
+color: black !important;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+font: 900 1.4rem/1.22 "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+transition: none !important;
+}
+.closeModal {
+color: black;
+display: flex;
+width: 160px;
+height: 49px;
+align-content: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+font: 700 1.4rem/1.22 "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: inherit;
+line-height: inherit;
+border-radius: 4px;
+background-color: #f5f5f5;
+border: 2px solid solid #dddddd80;
+transition: none !important;
+}
+.overlay {
+background: rgba(0, 0, 0, 0.7);
+width: 100%;
+height: 100%;
+z-index: 9999;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.5);
+visibility: hidden;
+opacity: 1;
+
+&:target {
+visibility: visible;
+opacity: 1;
+}
+}
+.disclaimerModal {
+padding: 15px;
+border: 1px solid #666;
+width: 528px;
+box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+max-width: calc(100% - 20px);
+max-height: calc(100% - 20px);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #fff;
+height: 570px;
+border-radius: 12px;
+
+.headingDisclaimer {
+margin: 5px 0;
+color: #444;
+font: normal 800 1.4rem/120% "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+}
+.exitModalButton {
+position: absolute;
+width: 20px;
+height: 20px;
+top: -2px;
+right: 10px;
+opacity: 0.8;
+font-size: 24px;
+font-weight: bold;
+color: #666;
+}
+.complaintImg{
+max-width: 52%;
+height: auto;
+position: absolute;
+top: 30px;
+right: -10px;
+}
+.inputBox-Name-container{
+width: 17em;
+margin-bottom: 1em;
+}
+.inputBox-phoneNumber-container{
+width: 17em;
+margin-bottom: 1em;
+}
+.inputBox-policyNumber-container{
+width: 30.5em;
+margin-bottom: 1em;
+}
+.inputBox-email-container{
+width: 17em;
+margin-bottom: 1em;
+}
+#complaintDescription{
+width: 30.5em;
+height: 8em;
+}
+.thankyou-message{
+    font-size: 1.4rem;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#ticketId {
+    font-size: 1.4rem;
+    display: flex;
+    width: max-content;
+    margin-left: -57px;
+}
+@media (max-width: 768px){
+.disclaimerModal{
+padding: 15px;
+border: 1px solid #666;
+width: 528px;
+box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+max-width: calc(100% - 20px);
+max-height: fit-content;
+transform: translate(-50%, -50%);
+background: #fff;
+height:inherit;
+border-radius: 12px;
+overflow-y: auto
+}
+.headingDisclaimer {
+margin: 5px 0;
+color: #444;
+font: normal 800 1.4rem/120% "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+}
+@media (max-width : 426px) {
+.complaintImg {
+display: none;
+}
+.thankyou-image{
+  left:7em;
+}
+.inputBox-email-container, .inputBox-Name-container, .inputBox-phoneNumber-container, .inputBox-policyNumber-container, #complaintDescription {
+width: -webkit-fill-available;
+margin-right: 0px;
+}
+@media (max-width: 376px){
+  .thankyou-image{
+  left:4.5em;
+}
+}
+}
+.required {
+        color: red;
+        display: none;
+    }
+</style> -->
+
+<!-- <script>
+  function checkFormValidity(event) {
+    event.preventDefault();
+    var form = event.target;
+    if (form.checkValidity()) {
+        // If the form is valid, submit it
+        submitForm();
+    } else {
+        // If the form is invalid, show an error message
+        alert('Please correct the errors in the form.');
+    }
+  }
+
+  function submitForm() {
+    var name = document.querySelector('#name').value;
+    var email = document.querySelector('#email').value;
+    var phoneNumber = document.querySelector('#mobileNumber').value;
+    var policyNumber = document.querySelector('#policyNumber').value;
+    var complaint = document.querySelector('#complaintDescription').value;
+
+    var data = {
+        "claimnumber": policyNumber, // Assuming policyNumber is used as claimnumber
+        "policyholderlastname": name.split(' ').slice(-1).join(' '), // Assuming last word of name is the last name
+        "policyholderfirstname": name.split(' ').slice(0, -1).join(' '), // Assuming all but last word of name is the first name
+        "policyholderemailaddress": email,
+        "policynumber": policyNumber,
+        "description": complaint,
+        "phonenumberinitial": phoneNumber,
+        "complaint": complaint,
+        "priority": "medium"
+    };
+
+    fetch('https://direct-prod-directportal.godigit.com/DirectPortal/generate/fnol/dd-ticket?isLife=true', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        // Create new p element and set its text content to the ticket_id
+        var ticketId = document.createElement('p');
+          ticketId.id = 'ticketId';
+          ticketId.textContent = 'Your Ticket ID is: ' + data.data.ticket_no;
+          // Get the div with the class 'thankyou-image' and append the p element to it
+          var thankyouDiv = document.querySelector('.thankyou-image');
+          thankyouDiv.appendChild(ticketId);
+          // Show the div
+          thankyouDiv.style.display = 'block';
+          // Hide the other elements
+          document.querySelector('.headingDisclaimer').style.display = 'none';
+          document.querySelector('.inputBox-container').style.display = 'none';
+          document.querySelector('.inputBox-policyNumber-container').style.display = 'none';
+          document.querySelector('.inputBox-phoneNumber-container').style.display = 'none';
+          document.querySelector('.inputBox-Name-container').style.display = 'none';
+          document.querySelector('.inputBox-email-container').style.display = 'none';
+          document.querySelector('.inputBox-container-submit').style.display = 'none';
+          document.querySelector('.complaintImg').style.display = 'none';
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+  }
+
+  document.querySelector('form').addEventListener('submit', checkFormValidity);
+
+  var inputs = document.querySelectorAll('input, textarea');
+  inputs.forEach(function(input) {
+      input.addEventListener('blur', function() {
+          var requiredSpan = this.parentNode.querySelector('.required');
+          if (!this.validity.valid) {
+              requiredSpan.style.display = 'inline';
+          } else {
+              requiredSpan.style.display = 'none';
+          }
+      });
+  });
+</script> -->
+
+<!-- <script>
+  function checkFormValidity(event) {
+    event.preventDefault();
+    var form = event.target;
+        if (form.checkValidity()) {
+            // If the form is valid, submit it
+            submitForm();
+        } else {
+            // If the form is invalid, show an error message
+            alert('Please correct the errors in the form.');
+        }
+    }
+    function submitForm() {
+      var name = document.querySelector('#name').value;
+      var email = document.querySelector('#email').value;
+      var phoneNumber = document.querySelector('#mobileNumber').value;
+      var policyNumber = document.querySelector('#policyNumber').value;
+      var complaint = document.querySelector('#complaintDescription').value;
+  
+      var data = {
+          "name": name,
+          "email": email,
+          "phoneNumber": phoneNumber,
+          "policyNumber": policyNumber,
+          "claimNumber": policyNumber,
+          "complaint": complaint
+      };
+  
+      fetch('https://uat-directportal.godigit.com/DirectPortal/generate/fnol/dd-ticket?isLife=true', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+      })
+      .then(response => response.json())
+      .then(data => {
+          console.log(data);
+          // Create new p element and set its text content to the ticket_id
+          var ticketId = document.createElement('p');
+          ticketId.id = 'ticketId';
+          ticketId.textContent = 'Your Ticket ID is: ' + data.data.ticket_no;
+          // Get the div with the class 'thankyou-image' and append the p element to it
+          var thankyouDiv = document.querySelector('.thankyou-image');
+          thankyouDiv.appendChild(ticketId);
+          // Show the div
+          thankyouDiv.style.display = 'block';
+          // Hide the other elements
+          document.querySelector('.headingDisclaimer').style.display = 'none';
+          document.querySelector('.inputBox-container').style.display = 'none';
+          document.querySelector('.inputBox-policyNumber-container').style.display = 'none';
+          document.querySelector('.inputBox-phoneNumber-container').style.display = 'none';
+          document.querySelector('.inputBox-Name-container').style.display = 'none';
+          document.querySelector('.inputBox-email-container').style.display = 'none';
+          document.querySelector('.inputBox-container-submit').style.display = 'none';
+          document.querySelector('.complaintImg').style.display = 'none';
+      })
+      .catch((error) => {
+          console.error('Error:', error);
+      });
+  }
+  
+  document.querySelector('form').addEventListener('submit', checkFormValidity);
+
+  var inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(function(input) {
+        input.addEventListener('blur', function() {
+            var requiredSpan = this.parentNode.querySelector('.required');
+            if (!this.validity.valid) {
+                requiredSpan.style.display = 'inline';
+            } else {
+                requiredSpan.style.display = 'none';
+            }
+        });
+    });
+  </script> -->
+<div style="text-align: center;"><p>Contact an Insurance Ombudsman – <a href="https://www.cioins.co.in/Ombudsman" style="color: #fb0;">Click here</a></p>
+<p>or</p>
+<p>To find the details of the Insurance Ombudsman for the applicable jurisdiction - <a href="https://www.godigit.com/content/dam/godigit/life/documents/ombudsmen-details-as-per-digit-branch.pdf" style="color: #fb0;">Click here</a></p></div>

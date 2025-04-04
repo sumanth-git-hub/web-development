@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    background-color:  #0d0d0d;
+    color: white;
+}
+img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-top: 10px;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+    background-color: greenyellow;
+}
+.email-id {
+    color: yellowgreen;
+}
+[onclick="callSynchronous()"]{
+    background-color: red;
+}
+.disclaimer-text-style {
+    font-style: italic;
+    font-size: 12px;
+}
+/* .button-cta {
+    background-color: #fb0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.button-cta a {
+    text-decoration-line: none;
+    color: #000;
+    font-weight: 900;
+} */

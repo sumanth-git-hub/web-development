@@ -1,0 +1,21 @@
+
+.two {
+    /* background-image: linear-gradient(to left, red,yellow,orange); */
+    /* background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1)); */
+    background-image: linear-gradient(to right,#71b2ce, #babec8);
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    padding: 25px;
+    border: 10px ridge teal;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+   outline: 2px solid black;
+}
+
+.pic {
+   width: 120%;
+   margin-left: -20px;
+   margin-top: -10px;
+}

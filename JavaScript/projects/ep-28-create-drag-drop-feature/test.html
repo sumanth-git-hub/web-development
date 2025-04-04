@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>How To Create Drag & Drop Feature</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js" defer></script> -->
+     <style>
+        .quick-links {
+            background-color: #fafafa;
+            padding: 10px;
+        }
+        .quick-links li {
+            text-decoration: underline;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .quick-links li i {
+            margin-left: 10px;
+        }
+        .quick-links a {
+            text-decoration: none;
+            color: unset;
+        }
+        .quick-links li:hover {
+            color: #fa1;
+        }
+     </style>
+<body>
+    <h1 draggable="true" id="heading-component">Create Drag and Drop Feature&nbsp;&nbsp;<i class="fa-solid fa-grip-vertical"></i></h1>
+    <div id="club-together" class="dropzone">
+        <ul class="quick-links">
+            <li class="list-links"><a href="https://www.godigit.com/life-insurance/term-insurance" target="_blank">Term Insurance</a> Calculator<i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+            <li class="list-links">How Much <a href="https://www.godigit.com/life-insurance/term-insurance" target="_blank">Term Insurance</a> Cover Do I Need?<i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+            <li class="list-links">Can You Change <a href="https://www.godigit.com/life-insurance/term-insurance/can-we-change-nominee-in-term-insurance" target="_blank">Nominees in Term Insurance</a>?<i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+            <li class="list-links">What is <a href="https://www.godigit.com/life-insurance"  target="_blank">Life Insurance</a>?<i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+        </ul>
+    </div>
+    <main class="container">
+        <div id="left" class="dropzone">
+            <div class="list" draggable="true" id="item1">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 1
+            </div>
+            <div class="list" draggable="true" id="item2">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 2
+            </div>
+            <div class="list" draggable="true" id="item3">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 3
+            </div>
+            <div class="list" draggable="true" id="item4">
+                <i class="fa-solid fa-grip-vertical"></i>
+                List Item 4
+            </div>
+        </div>
+        <div id="right" class="dropzone"></div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let lists = document.querySelectorAll(".list");
+            let heading = document.getElementById("heading-component");
+            const dropZones = document.querySelectorAll(".dropzone");
+            console.log(dropZones)
+            function addDragStartListener(element) {
+                element.addEventListener("dragstart", (e) => {
+                    e.dataTransfer.setData("text/plain", e.target.id);
+                    console.log(e.target.id);
+                });
+            }
+
+            lists.forEach(list => {
+                addDragStartListener(list);
+            });
+
+            addDragStartListener(heading);
+
+            function addDropListeners(dropTarget) {
+                dropTarget.addEventListener("dragover", (e) => {
+                    e.preventDefault();
+                });
+
+                dropTarget.addEventListener("drop", (e) => {
+                    e.preventDefault();
+                    let id = e.dataTransfer.getData("text/plain");
+                    let draggableElement = document.getElementById(id);
+                    dropTarget.appendChild(draggableElement);
+                });
+            }
+
+            dropZones.forEach(dropzone => {
+                addDropListeners(dropzone);
+            });
+
+            // Ensure elements can be dragged back from the body
+            document.body.addEventListener("dragover", (e) => {
+                e.preventDefault();
+            });
+
+            document.body.addEventListener("drop", (e) => {
+                e.preventDefault();
+                let id = e.dataTransfer.getData("text/plain");
+                let draggableElement = document.getElementById(id);
+                let dropTarget = e.target.closest(".dropzone");
+                console.log(dropTarget);
+                if (dropTarget) {
+                    dropTarget.appendChild(draggableElement);
+                    console.log(dropTarget);
+                } else {
+                    document.body.appendChild(draggableElement);
+                }
+            });
+        });
+
+        const listOfLinks = document.querySelectorAll(".list-links");
+
+        listOfLinks.forEach(clickElement => {
+            clickElement.addEventListener("click", (e) => {
+                window.open(clickElement.children[0].href)
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("./images-folder/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+}
+[alt="cartech-logo"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    transform: translateY(-10%);
+
+}
+.text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.text-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+.text-content h1 span {
+    color: #2D9EE8;
+}
+.text-content button {
+    border: 2px solid #fff;
+    outline: none;
+    background-color: transparent;
+    padding: 12px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.text-content button:hover {
+    background-color: #fa1;
+    color: #000;
+    border: none;
+    font-weight: 600;
+}
+.launching-time {
+    display: flex;
+}
+.launching-time div {
+    flex-basis: 100px;
+    margin-bottom: 10px;
+}
+.launching-time div p {
+    font-size: 60px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+}
+[alt="rocket"] {
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+
+/* [alt="move-machine"] {
+    width: 150px;
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+    animation: car 4s linear infinite;
+    color: #2D9EE8;
+}
+@keyframes car {
+    0% {
+        left: 0%;
+        opacity: 1;
+    }
+    100% {
+        left: 90%;
+        opacity: 1;
+    }
+} */
+[alt="move-machine"]{
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .text-content h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    [alt="cartech-logo"] {
+        max-width: 150px;
+    }
+    .launching-time div p {
+        font-size: 40px;
+    }
+    .text-content button {
+        margin-top: 10px;
+    }
+    [alt="rocket"] {
+        display: none;
+    }
+    [alt="move-machine"] {
+        display: unset;
+        width: 150px;
+        position: absolute;
+        right: 0%;
+        bottom: 10%;
+        transform: rotate(270deg);
+        animation: car 4s linear infinite;
+        color: #2D9EE8;
+    }
+    @keyframes car {
+        0% {
+            bottom: 10%;
+            opacity: 1;
+        }
+        100% {
+            bottom: 105%;
+            opacity: 1;
+        }
+    }
+}

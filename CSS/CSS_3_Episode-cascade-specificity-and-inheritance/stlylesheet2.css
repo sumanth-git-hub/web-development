@@ -1,0 +1,15 @@
+/* #html {
+    background-color: rgb(80, 255, 185); */
+
+    body{
+        color:green;
+    }
+    ul {
+        font-family: cursive;
+        font-weight: 700;
+        font-style: oblique;
+    }
+    button {
+        font-family: inherit;
+        color: inherit;
+    }

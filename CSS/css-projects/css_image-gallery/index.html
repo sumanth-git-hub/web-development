@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        * {
+        box-sizing: border-box;
+        }
+        .image-container {
+            border: 1px solid #ccc;
+            background-image: linear-gradient(to right, rgb(88, 153, 222), rgb(209, 123, 247));
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        .image-container:hover {
+            border: 1px solid black;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            color: white;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+            /* color: white; */
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 840px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 10px 0;
+            }
+        }
+        @media (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+    <div class="responsive">
+    <div class="image-container">
+        <a href="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd" target="_blank">
+            <img src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd" alt="cars">
+        </a>
+        <div class="description">
+            Add a description of the image here
+        </div>
+    </div>
+</div>
+    <div class="responsive">
+    <div class="image-container">
+        <a href="https://plus.unsplash.com/premium_photo-1682125729312-78f16e6e6f38" target="_blank">
+            <img src="https://plus.unsplash.com/premium_photo-1682125729312-78f16e6e6f38" alt="cars">
+        </a>
+        <div class="description">
+            Add a description of the image here
+        </div>
+    </div>
+</div>
+    <div class="responsive">
+    <div class="image-container">
+        <a href="https://plus.unsplash.com/premium_photo-1682125726825-3c0049c0aae3" target="_blank">
+            <img src="https://plus.unsplash.com/premium_photo-1682125726825-3c0049c0aae3" alt="cars">
+        </a>
+        <div class="description">
+            Add a description of the image here
+        </div>
+    </div>
+</div>
+    <div class="responsive">
+    <div class="image-container">
+        <a href="https://images.unsplash.com/photo-1517491093410-ab48c47bc750" target="_blank">
+            <img src="https://images.unsplash.com/photo-1517491093410-ab48c47bc750" alt="cars">
+        </a>
+        <div class="description">
+            Add a description of the image here
+        </div>
+    </div>
+</div>
+</div>
+<div style="padding:6px;">
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  </div>
+</body>
+</html>

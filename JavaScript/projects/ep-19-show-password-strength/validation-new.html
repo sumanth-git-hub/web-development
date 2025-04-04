@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Add password and Check the Strength</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+     <script src="validation.js" defer></script>
+
+     <style>
+        .container {
+            gap: 20px;
+            /* justify-content: flex-start; */
+        }
+        .input-section {
+            display: flex;
+            width: 100%;
+            max-width: 400px;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .side-section {
+            display: flex;
+            width: 100%;
+            max-width: 400px;
+            align-items: center;
+            justify-content: center;
+
+            .generate-password {
+                margin: 10px 20px 0;
+            
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .input-section {
+                align-items: flex-start;
+            }
+            .password-status {
+                padding: 0 5px;
+            }
+            .password-section {
+             max-width: unset;
+            }
+            .copy-password {
+            margin-top: 12px;
+            font-size: 40px;
+            }
+            .text-content {
+                text-align: unset;
+                color: #fff;    
+                margin: 50px 0 20px;
+            }
+            .text-content h1 span {
+                background-color: #fff;
+                color: green;
+                padding: 0 10px;
+                border-radius: 10px;
+            }
+            .text-content h1 {
+                margin-bottom: 10px;
+            }
+        }
+     </style>
+
+</head>
+<body>
+    <main class="main-section">
+        <div class="text-content">
+            <h1>Check Password <span>Strength <i class="fa-solid fa-lock"></i></span></h1>
+            <p>Using HTML, CSS and JavaScript</p>
+        </div>
+        <div class="container">
+            <div class="input-section">
+                <section class="password-section">
+                    <input type="password" id="user-password" placeholder="Enter the Password"><span class="hide-show"><i class="fa-solid fa-eye-slash"></i></span>
+                </section>
+                <span class="password-status"></span>
+            </div>
+            <aside class="side-section">
+                <span class="copy-password" title="copy password"><i class="fa-solid fa-clone"></i></span>
+                 <button class="generate-password" onclick="generatePassword()">Generate Password</button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

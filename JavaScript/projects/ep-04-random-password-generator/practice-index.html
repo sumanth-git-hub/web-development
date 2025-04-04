@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Random Email ID & Password Generator Tool</title>
+    <script src="practice-script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Generate a<br><span>Random Email ID & Password</span></h1>
+    <div class="display">
+        <input type="text" id="email-id" placeholder="Your email id">
+        <i class="fa-solid fa-copy" id="copy-icon-email" onclick="justCopy()"></i>
+    </div>
+    <div class="display">
+        <input type="text" id="password" placeholder="Your unique password">
+        <i class="fa-solid fa-copy" id="copy-icon"></i>
+    </div>
+    <button class="generate-password-button"><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Generate Now</button>
+</div>
+</body>
+</html>

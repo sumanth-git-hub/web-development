@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto type enable on different components</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nunito",'Courier New', Courier, monospace;
+    }
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+    header {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 5%;
+
+    }
+    h1 span::after {
+        content: "";
+        width: 3px;
+        height: 30px;
+        background-color: #47A248;
+        display: inline-flex;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .auto-type-element-next {
+        color: #47A248;
+    }
+    .list-of-ol li {
+        list-style-type: disclosure-closed;
+        margin-left: 20px;
+        margin-top: 20px;
+        vertical-align: middle;
+    }
+    .list-of-ol li::marker {
+        color: #fa1;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .list-of-ol{
+        padding-left: 20px;
+        
+    }
+</style>
+<body>
+    <header>
+        <span>One Word AutoType Feature</span> <span class="auto-type-element-next"></span>
+    </header>
+    <h1>What is MERN Stands for <span class="auto-type-element"></span></h1>
+    <h1>What is MEAN Stands for <span class="auto-type-element-second"></span></h1>
+
+    <ul class="list-of-ol">
+        <li>MangoDB</li>
+        <li>Express.JS</li>
+        <li>React.JS</li>
+        <li>Node.JS</li>
+    </ul>
+    <script>
+
+        // for single words
+        const autoTypeElement = document.querySelector(".auto-type-element-next");
+       let oneWord = "Hello World!"
+       let  characterCount = 0;  
+       let  reverseType = false; 
+
+        setInterval(() => {
+            if(!reverseType){
+                autoTypeElement.textContent = autoTypeElement.textContent + oneWord[characterCount]
+                characterCount++;
+            }
+            else {
+                autoTypeElement.textContent = autoTypeElement.textContent.slice(0, autoTypeElement.textContent.length - 1)
+                characterCount --;
+            }
+            if(characterCount === oneWord.length){
+                reverseType = true;
+            }
+            if(autoTypeElement.textContent.length === 0){
+                reverseType = false;
+                // characterCount = 0;
+            }
+        }, 500);
+
+        // for multiple words
+
+       const textElement = document.querySelector(".auto-type-element");
+       const textElementNext = document.querySelector(".auto-type-element-second");
+       const wordsList = ["MangoDB", "Express.JS", "React.JS", "Node.JS"];
+       const anotherWordList = ["MangoDB", "Express.JS", "Angular.JS", "Node.JS"]
+       
+
+
+       function enableAutoType(element, list) {
+
+       let wordCount = 0;
+       let wordCharacterCount = 0
+       let nextReverseType = false;
+       let skipUpdate = 0;
+
+           setInterval(() => {
+            if(skipUpdate){
+                skipUpdate --;
+                return
+            }
+            if(!nextReverseType){
+                element.innerText = element.textContent + list[wordCount][wordCharacterCount]
+                wordCharacterCount++;
+                skipUpdate = 2;
+                
+                if(element.innerText === "A"){
+                    element.style.color = "#DD1B16"
+                }
+            }
+            else {
+                element.innerText = element.textContent.slice(0, element.textContent.length - 1);
+                wordCharacterCount --;
+            }
+            if(wordCharacterCount === list[wordCount].length){
+                nextReverseType = true;
+                skipUpdate = 5;
+                
+            }
+
+            if(element.textContent.length === 0){
+                nextReverseType = false;
+                // wordCharacterCount = 0;
+                wordCount ++;
+                
+                if(wordCount === 0){
+                    element.style.color = "#DD1B16"
+                }
+                if(wordCount === 1){
+                    element.style.color = "#FFFFFF"
+                }
+                if(wordCount === 2){
+                    element.style.color = "#61DAFB"
+                }
+                if(wordCount === 3){
+                    element.style.color = "#8CC84B"
+                }
+            }
+            if(wordCount === list.length){
+                wordCount = 0;
+            }
+           }, 100);
+
+       }
+       
+       enableAutoType(textElement, wordsList)
+
+
+       enableAutoType(textElementNext, anotherWordList)
+
+    </script>
+</body>
+</html>
