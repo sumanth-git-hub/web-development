@@ -1,28 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
     <title>Dynamic Styling by using tailwind css</title>
-</head>
-<body class="bg-black text-white">
-    <div class="block media1200:grid grid-cols-2 grid-rows-1 items-center justify-self-start media1200:border-2 media1200:border-red-600">
-        <h1 class="text-4xl font-bold text-center my-10">How to add the dynamic styling in Tailwind CSS</h1>
-        <div id="parent-of-the-button" class="w-full turn-active:bg-white">
-            <button id="button-element" class="bg-orange-400 px-4 py-2 rounded-xl mx-auto block color-change:text-red-800 font-semibold text-black">Click here</button>
-        </div>
+  </head>
+  <body class="bg-black text-white">
+    <div
+      class="block grid-cols-2 grid-rows-1 items-center justify-self-start media1200:grid media1200:border-2 media1200:border-red-600"
+    >
+      <h1 class="my-10 text-center text-4xl font-bold">
+        How to add the dynamic styling in Tailwind CSS
+      </h1>
+      <div id="parent-of-the-button" class="w-full turn-active:bg-white">
+        <button
+          id="button-element"
+          class="mx-auto block rounded-xl bg-orange-400 px-4 py-2 font-semibold text-black color-change:text-red-800"
+        >
+          Click here
+        </button>
+      </div>
     </div>
 
     <script>
-        const parentOfButton = document.getElementById("parent-of-the-button");
-        const buttonElement = document.getElementById("button-element");
+      const parentOfButton = document.getElementById("parent-of-the-button");
+      const buttonElement = document.getElementById("button-element");
 
-        buttonElement.addEventListener("click", (e) => {
-            parentOfButton.classList.toggle("turn-active");
-            buttonElement.classList.toggle("color-change")
-            console.log(e.target)
-        })
+      buttonElement.addEventListener("click", (e) => {
+        parentOfButton.classList.toggle("turn-active");
+        buttonElement.classList.toggle("color-change");
+        console.log(e.target);
+      });
     </script>
-</body>
+  </body>
 </html>
