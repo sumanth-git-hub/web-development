@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Carousel Using SwiperJS and Tailwind</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 400px;
+          height: 400px;
+          padding: 50px;
+        }
+    
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
+  </head>
+  <body>
+
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Thumbs gallery loop -->
+
+<!-- Created by using Tailwind free components -->
+    <div class="bg-white py-24 sm:py-10">
+        <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8">
+          <div class="max-w-full">
+            <h2 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-4xl">Team Sections</h2>
+            <p class="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+          </div>
+          <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Leslie Alexander</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Michael Foster</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Dries Vincent</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Business Relations</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Lindsay Walton</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Front-end Developer</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Courtney Henry</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Designer</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="size-16 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                <div>
+                  <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">Tom Cook</h3>
+                  <p class="text-sm/6 font-semibold text-indigo-600">Director of Product</p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- More people... -->
+          </ul>
+        </div>
+      </div>
+      
+  </body>
+</html>

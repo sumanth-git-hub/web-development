@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Carousel component</title>
+  <link rel="stylesheet" href="./src/output.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      /* width: 50%;
+      height: 50%; */
+      margin-top: 10%;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* background: #fff; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      border-radius: 50%;
+      height: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    }
+    .swiper-pagination {
+      position: unset;
+    }
+    .swiper-card {
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    @media screen and (max-width: 720px) {
+      .swiper-button-prev {
+        display: none;
+      }
+      .swiper-button-next {
+        display: none;
+      }
+      .swiper-card {
+        flex-direction: column;
+        height: 100%;
+      }
+      .swiper {
+        margin-top: 10%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div data-hash="slide1" class="swiper-slide">
+        <div class="swiper-card-inside swiper-card">
+            <img src="https://anuragsinghbam.com/images/Srihari.webp" alt="Srihari">
+            <div>
+              <p class="text-left text-base">“I worked with Anurag to make my website. I
+                am speechless by looking at his work ethic and dedication.
+                Working with him was the best decision I made.”</p>
+                <h3 class="text-right text-2xl text-[#1788ae] font-bold">Srihari Kestur</h3>
+                <p class="text-right text-sm text-[#1788ae]">Founder Harigurus</p>
+            </div>
+        </div>
+      </div>
+      <div data-hash="slide2" class="swiper-slide">
+        <div class="swiper-card-inside swiper-card">
+          <img src="https://anuragsinghbam.com/images/gautham.webp" alt="Srihari">
+          <div>
+            <p class="text-left text-base">
+              “I can bet that it's too hard to find professional developers
+              like Anurag. He could peek inside my mind and made the site
+              exactly as I wanted. Much appreciated”</p>
+              <h3 class="text-right text-2xl text-[#1788ae] font-bold">Gautham Chengappa</h3>
+              <p class="text-right text-sm text-[#1788ae]">Web Developer, UX Consultancy</p>
+          </div>
+      </div>
+      </div>
+      <div data-hash="slide3" class="swiper-slide">
+        <div class="swiper-card-inside swiper-card">
+          <img src="https://anuragsinghbam.com/images/saatvik.webp" alt="testimonial">
+          <div>
+            <p class="text-left text-base">
+              “Anurag is a talented, committed individual who will leave no
+              stone unturned in his pursuit to provide with the best. His
+              attention to detail and in-depth experience in the of web
+              development is indeed commendable. He has exhibited exemplary
+              skills in the field, and I hope to see all the great projects
+              coming up!”</p>
+              <h3 class="text-right text-2xl text-[#1788ae] font-bold">Saatvik Nagpal</h3>
+              <p class="text-right text-sm text-[#1788ae]">Founder, EazyGrad</p>
+          </div>
+      </div>
+      </div>
+      <div data-hash="slide4" class="swiper-slide">
+        <div class="swiper-card-inside swiper-card">
+          <img src="https://anuragsinghbam.com/images/kira.webp" alt="Srihari">
+          <div>
+            <p class="text-left text-base">
+              “Anurag was a wonderful developer to work with! He anticipated
+              everything I need to consider for my website. He also went
+              the extra mile and added details that I hadn't considered! He
+              is helping my business grow, and I will definitely work with
+              him again!”</p>
+              <h3 class="text-right text-2xl text-[#1788ae] font-bold">Kira Bragg</h3>
+              <p class="text-right text-sm text-[#1788ae]">English Mentor</p>
+          </div>
+      </div>
+      </div>
+      <!-- <div data-hash="slide5" class="swiper-slide">Slide 5</div>
+      <div data-hash="slide6" class="swiper-slide">Slide 6</div>
+      <div data-hash="slide7" class="swiper-slide">Slide 7</div>
+      <div data-hash="slide8" class="swiper-slide">Slide 8</div>
+      <div data-hash="slide9" class="swiper-slide">Slide 9</div> -->
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      loop: true,
+      hashNavigation: {
+        watchState: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

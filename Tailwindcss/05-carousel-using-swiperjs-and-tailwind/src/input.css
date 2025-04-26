@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.swiper-card-inside {
+    @apply w-[80%] h-60 rounded-2xl flex items-center gap-2 p-6 mt-4
+}
