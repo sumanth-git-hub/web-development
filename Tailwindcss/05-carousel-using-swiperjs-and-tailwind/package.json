@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.1.4"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "tailwind-minify": "tailwindcss -i ./src/input.css -o ./src/output.css --watch --minify",
+    "tailwind-pretty": "npx prettier --write index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
