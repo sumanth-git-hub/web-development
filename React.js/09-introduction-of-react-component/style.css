@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 20px;
+}
+.reuseable-component {
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.reuseable-component img {
+    width: 100%;
+}
+.content-section {
+    padding: 10px;
+}
+.content-section h3, p {
+    margin-block: 10px;
+}
+.second-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

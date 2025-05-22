@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.reuseable-component {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 250px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.reuseable-component img {
+  width: 100%;
+}
+
+.content-section {
+  padding: 10px;
+}
+
+.content-section h3, p {
+  margin-block: 10px;
+}
+
+.second-container {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: flex;
+}
+/*# sourceMappingURL=09-introduction-of-react-component.aa436662.css.map */
