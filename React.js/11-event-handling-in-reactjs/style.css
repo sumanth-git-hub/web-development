@@ -1,0 +1,26 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 16px;
+    margin-top: 32px;
+}
+.image-styles {
+    width: 100%;
+    max-width: 30px;
+    height: 30px;
+}
+.buttons-element {
+    background-color: #fa0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
