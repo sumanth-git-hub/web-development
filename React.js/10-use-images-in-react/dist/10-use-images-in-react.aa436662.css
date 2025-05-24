@@ -1,0 +1,29 @@
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.main-section {
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin-top: 32px;
+  padding: 16px;
+  display: flex;
+}
+
+.image-styles {
+  width: 100%;
+  max-width: 30px;
+  height: 30px;
+}
+
+.buttons-element {
+  cursor: pointer;
+  background-color: #fa0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+/*# sourceMappingURL=10-use-images-in-react.aa436662.css.map */
