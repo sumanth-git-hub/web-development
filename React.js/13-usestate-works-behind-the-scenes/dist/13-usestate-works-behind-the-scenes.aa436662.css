@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.component-style {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.component-style button {
+  cursor: pointer;
+  background-color: #fa1;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=13-usestate-works-behind-the-scenes.aa436662.css.map */
