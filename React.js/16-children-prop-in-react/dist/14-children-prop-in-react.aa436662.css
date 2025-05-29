@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+.button-element {
+  cursor: pointer;
+  background-color: #fa1;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100px;
+  padding: 10px;
+}
+
+.button-element img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.apple-basket-container {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.apple-basket {
+  text-align: center;
+  width: 100%;
+  max-width: 80px;
+}
+/*# sourceMappingURL=14-children-prop-in-react.aa436662.css.map */
