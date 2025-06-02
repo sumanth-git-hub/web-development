@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000;
+    color: #fff;
+}
+.button-element {
+    width: 100%;
+    max-width: 100px;
+    background-color: #fa1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-element img {
+    width: 100%;
+    max-width: 50px;
+}
+.apple-basket-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 20px;
+}
+.apple-basket {
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    font-size: 20px;
+}
+.alignElements {
+    text-align: center;
+}
+.setMargin {
+    display: block;
+    margin-inline: auto;
+}
