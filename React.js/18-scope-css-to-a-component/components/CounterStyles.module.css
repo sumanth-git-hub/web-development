@@ -1,0 +1,23 @@
+
+.buttonElement {
+    background-color: #11fbff;
+    cursor: pointer;
+    width: 100%;
+    /* max-width: 200px; */
+    padding: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 700;
+}
+.counter-number-section {
+    text-align: center;
+    font-size: 44px;
+}
+.apply-text-shadow-plus {
+    text-shadow: -3px 0px 3px #ff9500;
+}
+.apply-text-shadow-less {
+    text-shadow: -3px 0px 3px #ff1500;
+}

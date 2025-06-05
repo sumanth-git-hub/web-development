@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #333;
+}
+
+.main-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.heading-element {
+  text-align: center;
+  margin-block: 20px;
+}
+
+.buttonElement {
+  cursor: pointer;
+  color: #000;
+  background-color: #fa1;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.card-element {
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 2vw;
+}
+
+.card-element img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-element h2, p {
+  margin: 10px;
+}
+
+.alignment-component {
+  width: 100%;
+}
+
+.counter-element {
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  padding: 2vw;
+}
+
+.rendering-layout {
+  justify-content: center;
+  display: flex;
+}
+
+.R801TW_buttonElement {
+  cursor: pointer;
+  color: #000;
+  background-color: #11fbff;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.R801TW_counter-number-section {
+  text-align: center;
+  font-size: 44px;
+}
+
+.R801TW_apply-text-shadow-plus {
+  text-shadow: -3px 0 3px #ff9500;
+}
+
+.R801TW_apply-text-shadow-less {
+  text-shadow: -3px 0 3px #ff1500;
+}
+/*# sourceMappingURL=18-scope-css-to-a-component.aa436662.css.map */
