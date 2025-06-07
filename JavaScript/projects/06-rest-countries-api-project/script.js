@@ -4,7 +4,8 @@ let allCountriesData // created this variable to implement the search feature
 const searchInput = document.querySelector('.search-container input')
 const themeChanger = document.querySelector('.theme-changer')
 
-fetch("https://restcountries.com/v3.1/all")
+// fetch("https://restcountries.com/v3.1/all")  //the API is not working after few days of the project however the data listed in the json file is copied in and running the same in local json file
+fetch("/JavaScript/projects/06-rest-countries-api-project/countrydata.json")
   .then((res) => res.json())
   .then((countriesData) => {
     renderCountries(countriesData); // the below commented code is written on below function to avoid code repetition 'renderCountries' is the function that getting call back from here
