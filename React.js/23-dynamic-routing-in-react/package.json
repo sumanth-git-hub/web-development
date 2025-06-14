@@ -1,0 +1,21 @@
+{
+  "name": "23-dynamic-routing-in-react",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "dev": "PARCEL_WATCHER_USE_POLLING=true parcel index.html",
+    "clear": "rm -rf .parcel-cache dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.14.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
