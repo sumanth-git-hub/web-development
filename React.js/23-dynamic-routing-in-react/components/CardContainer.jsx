@@ -5,7 +5,7 @@ export default function CardContainer({query}) {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
     fetch(
-      "http://127.0.0.1:5500/React.js/23-dynamic-routing-in-react/components/countrydata.json"
+      "https://gist.githubusercontent.com/sumanth-git-hub/f48ba4fff04cbe336717c1c8c4804c77/raw/cb9dff2df94f30cdc69032a382c296b26b386e72/rest-countries-api-file.json"
     )
       .then((res) => res.json())
       .then((data) => {

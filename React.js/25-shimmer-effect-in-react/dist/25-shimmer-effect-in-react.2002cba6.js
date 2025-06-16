@@ -24505,7 +24505,7 @@ function CardContainer({ query }) {
     const [countriesData, setCountriesData] = (0, _react.useState)(null);
     // console.log(countriesData)
     (0, _react.useEffect)(()=>{
-        fetch("http://127.0.0.1:5500/React.js/22-react-router/components/countrydata.json").then((res)=>res.json()).then((data)=>{
+        fetch("https://gist.githubusercontent.com/sumanth-git-hub/f48ba4fff04cbe336717c1c8c4804c77/raw/cb9dff2df94f30cdc69032a382c296b26b386e72/rest-countries-api-file.json").then((res)=>res.json()).then((data)=>{
             setCountriesData(data);
             console.log(countriesData);
         });
