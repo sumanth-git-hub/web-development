@@ -1,0 +1,39 @@
+.shimmer-image-individual {
+    height: 300px;
+    width: 100%;
+    background-color: #ccc;
+}
+.text-content-shimmer {
+    /* width: 300px; */
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.text-content-shimmer-small {
+     width: 200px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.small-border-cards-shimmer {
+    background-color: #ccc;
+    width: 100px;
+    height: 30px;
+}
+.small-border-container {
+    display: flex;
+    align-items: center;
+}
+.fix-p p {
+    width: 100%;
+    border-radius: 10px;
+}
+.country-container img {
+    border-radius: 10px;
+}
+@media (width <= 768px) {
+    .shimmer-image-individual {
+        width: 100%;
+        max-width: unset !important;
+    }
+}
