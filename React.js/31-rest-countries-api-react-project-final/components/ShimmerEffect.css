@@ -1,0 +1,53 @@
+main {
+    --shimmer-elements-color: hsl(0, 0%, 78%);
+}
+
+main.dark-mode {
+    --shimmer-elements-color: hsl(208, 21%, 34%);
+}
+
+#shimmer-image-individual {
+    height: 400px;
+    width: 100%;
+    background-color: var(--shimmer-elements-color);
+}
+.text-content-shimmer {
+    /* width: 300px; */
+    height: 40px;
+    background-color: var(--shimmer-elements-color);
+    border-radius: 10px;
+}
+.text-content-shimmer-small {
+     width: 200px;
+    height: 40px;
+    background-color: var(--shimmer-elements-color);
+    border-radius: 10px;
+}
+.small-border-cards-shimmer {
+    background-color: var(--shimmer-elements-color);
+    width: 18vw;
+    height: 40px;
+}
+.small-border-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.fix-p p {
+    width: 100%;
+    border-radius: 10px;
+}
+.country-container img {
+    border-radius: 10px;
+}
+.details-text {
+    flex-grow: 1;
+}
+@media (width <= 768px) {
+    .shimmer-image-individual {
+        width: 100%;
+        max-width: unset !important;
+    }
+}
