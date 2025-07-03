@@ -14,6 +14,7 @@ export default function ExpenseForm({pullExpenses}) {
     console.log(getFormData(e.target))
     const setId = {...getFormData(e.target), id: crypto.randomUUID()}
     pullExpenses((prevState) => [...prevState, setId])
+    e.target.reset()
   };
 
   const getFormData = (form) => {
