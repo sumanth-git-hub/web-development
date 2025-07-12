@@ -84,7 +84,10 @@ export default function ExpenseForm({ pullData }) {
 
     formRef.current.reset();
     setInputValue({
-      name: "",
+      title: '',
+      category: '',
+      amount: '',
+      email: ''
     });
   };
 
