@@ -1,0 +1,17 @@
+{
+  "name": "51-deconstructing-react",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@babel/preset-react": "^7.27.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
