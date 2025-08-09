@@ -1,0 +1,17 @@
+{
+  "name": "51-build-your-own-react-js-library",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.27.1"
+  }
+}
