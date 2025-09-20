@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Nunito", 'Courier New', Courier, monospace;
+}
+.reactColor {
+  color: #61DBFB;
+}
+.ticTackSection {
+  text-align: center;
+  margin-top: 50px;
+}
+.ticTackSection h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.resetButton {
+  background: #fa0;
+  padding-inline: 80px;
+  padding-block: 10px;
+  border-radius:20px;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.boxes {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  background-color: grey;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 8px;
+  position: relative;
+}
+.blockContainer {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  margin-inline: auto;
+}
+.boxes i {
+  font-size: 80px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  background-color: inherit;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.xIcon {
+  color: #61DBFB !important;
+}
+.circleIcon {
+  color: #FFCF26 !important;
+}
