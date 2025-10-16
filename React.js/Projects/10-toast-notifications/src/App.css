@@ -1,0 +1,65 @@
+/* .mainParentElement {
+  position: relative;
+} */
+.toastContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+      button {
+        cursor: pointer;
+        padding: 5px 10px;
+      }
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.notifications {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+
+}
+.toast-notification {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 20px;
+  /* background-color: green; */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: slideNotification 1s ease-in;
+  
+    i:hover {
+      color: rgb(30, 19, 234);
+      cursor: pointer;
+    }
+}
+@keyframes slideNotification {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.successTextContent {
+  background-color: green;
+}
+.warningTextContent {
+  background-color: orange;
+}
+.infoTextContent {
+  background-color: yellow;
+}
+.errorTextContent {
+  background-color: red;
+}

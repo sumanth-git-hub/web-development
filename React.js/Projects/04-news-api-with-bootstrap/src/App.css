@@ -1,0 +1,27 @@
+.nav-link {
+  cursor: pointer;
+}
+.timerSection {
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  top: 10%;
+  right: 0;
+  padding: 5px 24px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  position: absolute;
+}
+/* .timerSection span {
+  display: inline-block;
+  width: 100px;
+} */
+@media (max-width: 768px) {
+  .timerSection {
+  padding: 0;
+  box-shadow: none;
+  top: 90%;
+  left: 0%;
+  font-size: 12px;
+}
+}

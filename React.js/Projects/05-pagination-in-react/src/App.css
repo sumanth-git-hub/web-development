@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", 'Courier New', Courier, monospace;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+[disabled] {
+  background-color: rgb(232, 33, 33);
+  pointer-events: none;
+  user-select: none;
+}
+.darkShadow {
+    box-shadow: 0px 0px 5px 1px #ffaa11a1;
+}
