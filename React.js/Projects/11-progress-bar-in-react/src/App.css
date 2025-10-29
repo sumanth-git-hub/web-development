@@ -1,0 +1,25 @@
+:root {
+  font-family:"Nunito", 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+.progress-section {
+  width: 50%;
+}
+.progressContainer {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.progress {
+  /* width: 50%; */
+  text-align: center;
+  background-color: orange;
+  padding-block: 10px;
+  transition: width 1s ease;
+
+   span {
+    padding-left: 10px;
+   }
+}
