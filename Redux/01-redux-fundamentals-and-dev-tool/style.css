@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    font-family: "Nunito", 'Courier New', Courier, monospace;
+}
+.showState {
+    cursor: pointer;
+    color: orange;
+}
+p {
+    user-select: none;
+}
