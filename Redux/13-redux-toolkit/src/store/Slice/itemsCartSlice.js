@@ -67,7 +67,7 @@ const slice = createSlice({
       const existingCartItem = findItemIndex(state, action);
       if (existingCartItem !== -1) {
         state[existingCartItem].quantity += 1;
-        return state;
+        // return state;
       } else {
         state.push({ ...action.payload, quantity: 1 });
       }
@@ -85,7 +85,7 @@ const slice = createSlice({
       state[existingCartItem].quantity -= 1;
       if (state[existingCartItem].quantity <= 0) {
         state.splice(existingCartItem, 1);
-        return state;
+        // return state;
       }
     },
   },
