@@ -7,83 +7,33 @@ const testScript = () => {
 };
 
 export default testScript;
-/*
 
-// else if condition
+// currying in javascript
 
-const testObject = (number) => {
-  if(number === 1){
-    return "Sunday"
-  }
-  else if (number === 2) {
-    return "Monday"
-  }
-  else if (number === 3){
-    return "Tuesday"
-  }
-  else if (number === 4){
-    return "Wednesday"
-  }
-  else if (number === 5){
-    return "Thursday"
-  }
-  else if (number === 6){
-    return "Friday"
-  }
-  else if (number === 7){
-    return "Saturday"
-  }
-  else {
-    return "The number you entered is not matching with the weekdays"
+export const curryingFunction = (a) => (b) => (c) =>  a * b * c
+console.log(curryingFunction(2)(4)(6)) // 48
+
+//currying reuseable function
+function multiply(a) {
+  return function (b) {
+    return a * b
   }
 }
-*/
 
-/*
-// switch case condition
-const testObject = (number) => { 
+const multiplyByFour = multiply(4)
+console.log("Multiple by Four: ",multiplyByFour(5))
 
-  switch (number) {
-    case 1:
-      return "Sunday"  
-    case 2:
-      return "Monday"  
-    case 3:
-      return "Tuesday"  
-    case 4:
-      return "Wednesday"  
-    case 5:
-      return "Thursday"  
-    case 6:
-      return "Friday"  
-    case 7:
-      return "Saturday"  
-    default:
-     return "The number you entered is not matching with the weekdays"
+// infinite curried function
+
+function infiniteMultiply(a) {
+  return function (b) {
+    if(b){
+      return infiniteMultiply(a * b) // recursion function
+    }
+    return a
   }
-
 }
-*/
 
-// converted the switch case statement to object
+console.log("Infinite function: ", infiniteMultiply(4)(2)(2)())
 
-const testObject = (number) => {
-  let weekdays = {
-    1: "Sunday",
-    2: "Monday",
-    3: "Tuesday",
-    4: "Wednesday",
-    5: "Thursday",
-    6: "Friday",
-    7: "Saturday",
-  }[number];
-  return weekdays || "The number you entered is not matching with the weekdays";
-};
 
-// console.log(testObject(0));
-// console.log(testObject(1));
-// console.log(testObject(2));
-// console.log(testObject(3));
-// console.log(testObject(4));
-// console.log(testObject(5));
-// console.log(testObject("Hello"));
