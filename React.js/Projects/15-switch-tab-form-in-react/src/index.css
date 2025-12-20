@@ -1,0 +1,47 @@
+.tabs-list-container {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+  margin: 0;
+}
+.tabs-list-container li {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.tabs-list-container li:hover {
+  color: aqua;
+}
+.form-component {
+  border: 1px solid black;
+  padding: 10px;
+}
+.input-elements {
+  margin-bottom: 10px;
+}
+.prev-button {
+  background-color: aqua;
+}
+.next-button {
+  background-color: #fa0;
+}
+.navigator-buttons-section {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.navigator-buttons-section button {
+border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+li.active-class {
+  color: #fa0;
+}
