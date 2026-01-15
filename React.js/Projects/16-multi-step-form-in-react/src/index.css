@@ -1,0 +1,10 @@
+.add-shadow {
+  box-shadow: 0 1px 5px 2px rgb(0 0 0/ 30%);
+}
+.active-step-line {
+  background-color: #fa0;
+}
+.active-step {
+  background-color: rgb(65, 193, 244);
+  padding-block: 4px;
+}
