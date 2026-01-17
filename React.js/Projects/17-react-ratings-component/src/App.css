@@ -1,0 +1,18 @@
+.fa-star {
+  cursor: pointer;
+  font-size: 20px;
+  color: grey;
+}
+.add-gold-color {
+color: gold;
+}
+.ratings-container {
+  /* background-color: #808080dd; */
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 19%);
+  margin-inline: auto;
+  margin-top: 100px;
+}
