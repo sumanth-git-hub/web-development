@@ -31,7 +31,7 @@ const ImagesDataCom = ({scrollImage, setPageNumber}) => {
     <>
     {
         scrollImage.map((item, index) => {
-           return <img key={index} className='w-60 h-96 object-cover rounded-lg m-4 image-element' src={item.download_url} alt={item.author} />
+           return <img key={index} className='w-60 h-96 object-cover rounded-lg m-4 image-element block mx-auto' src={item.download_url} alt={item.author} />
             
         })
     }

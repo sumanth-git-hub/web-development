@@ -7,7 +7,7 @@ import InfiniteScrollFun from './components/InfiniteScrollFun'
 function App() {
 
   return (
-    <div className='react-app'>
+    <div className='react-app bg-black'>
       <InfiniteScrollFun />
     </div>
   )

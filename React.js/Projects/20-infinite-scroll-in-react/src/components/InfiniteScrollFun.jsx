@@ -25,8 +25,8 @@ const InfiniteScrollFun = () => {
 
   return (
     <div>
-        <h1 className='text-2xl font-bold text-center mt-4'>Infinite Scroll in <span className='text-sky-400'>React</span></h1>
-        <div className='container'>
+        <h1 className='text-2xl font-bold text-center pt-4 text-white'>Infinite Scroll Function Component in <span className='text-sky-400'>React</span></h1>
+        <div className='container mx-auto'>
             <ImagesDataCom scrollImage = {scrollImage} setPageNumber = {setPageNumber} />
         </div>
     </div>
