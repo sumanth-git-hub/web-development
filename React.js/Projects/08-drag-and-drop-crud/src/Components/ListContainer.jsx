@@ -21,7 +21,7 @@ export default function ListContainer() {
   const [isInputValues, setIsInputValues] = useStoreLocal("isInputValues", "");
   const [isEditingRowId, setIsEditingRowId] = useStoreLocal(
     "isEditingRowId",
-    null
+    null,
   );
 
   const addFunction = () => {
@@ -36,8 +36,8 @@ export default function ListContainer() {
         prev.map((todo) =>
           todo.id === isEditingRowId
             ? { ...todo, textContent: trimmedData, displayStatus: "" }
-            : todo
-        )
+            : todo,
+        ),
       );
       setIsEditingRowId(null);
     } else {
@@ -58,7 +58,7 @@ export default function ListContainer() {
     useSensor(PointerSensor, { activationConstraint: { distance: 10 } }),
     useSensor(TouchSensor, {
       activationConstraint: { delay: 300, tolerance: 5 },
-    })
+    }),
   );
 
   const handleDragEnd = (ev) => {

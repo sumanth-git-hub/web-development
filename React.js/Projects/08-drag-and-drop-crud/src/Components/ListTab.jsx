@@ -1,4 +1,3 @@
-// ListTab.jsx
 import React from "react";
 import SortableItem from "./SortableItem";
 

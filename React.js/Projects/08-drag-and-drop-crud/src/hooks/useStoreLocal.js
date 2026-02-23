@@ -3,12 +3,8 @@ import { useEffect, useState } from "react"
 export const useStoreLocal = (key, initialData) => {
     const [isData, setData] = useState(initialData)
 
-    console.log(key)
-
     useEffect(() => {
         const existingData = JSON.parse(localStorage.getItem(key));
-        console.log(existingData)
-
         if(existingData) {
             setData(existingData)
         }

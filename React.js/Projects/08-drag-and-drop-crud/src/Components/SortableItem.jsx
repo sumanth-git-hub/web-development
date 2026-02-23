@@ -10,8 +10,14 @@ export default function SortableItem({
   editingFunction,
   removeElement,
 }) {
-  const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
-    useSortable({ id });
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id });
 
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -25,7 +31,6 @@ export default function SortableItem({
       style={style}
       className={`flex justify-between items-center p-2 border rounded mb-2 bg-white returnElement`}
     >
-
       {/* Clickable main content */}
       <span
         onClick={() => toggleDisplay(id)}
@@ -42,8 +47,6 @@ export default function SortableItem({
         ></i>
         <span className="ml-2">{textContent}</span>
       </span>
-
-      {/*  Action buttons */}
       <div className="flex gap-4 items-center">
         <i
           onClick={(e) => {
@@ -60,15 +63,14 @@ export default function SortableItem({
           }}
           className="fa-solid fa-circle-xmark hover:text-red-600 transition duration-100 ease-in cursor-pointer"
         ></i>
-         {/* Use a small drag handle area with attributes and listeners props */}
-      <span
-        {...attributes}
-        {...listeners}
-        className="cursor-grab active:cursor-grabbing pr-2 text-gray-500"
-        title="Drag to reorder"
-      >
-        <i className="fa-solid fa-grip-vertical"></i>
-      </span>
+        <span
+          {...attributes}
+          {...listeners}
+          className="cursor-grab active:cursor-grabbing pr-2 text-gray-500"
+          title="Drag to reorder"
+        >
+          <i className="fa-solid fa-grip-vertical"></i>
+        </span>
       </div>
     </li>
   );
