@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Interview Preparation</title>
+    <script src="https://kit.fontawesome.com/632daf4394.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <!-- <script src="reduce-script.js" defer></script> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .light-mode {
+        --primary-color: #fff;
+        --primary-text-color: #000;
+      }
+      .dark-mode {
+        --primary-color: #000;
+        --primary-text-color: #fff;
+      }
+      body {
+        background-color: var(--primary-color);
+        color: var(--primary-text-color);
+      }
+      .main-section {
+        height: 100vh;
+        width: 100%;
+      }
+      .section-parent {
+        height: 50vh;
+        background-color: aquamarine;
+        position: relative;
+        display: none;  /*hiding the section */
+      }
+      #listElementsParent {
+        display: none;  /*hiding the section */
+      }
+      .first-parent {
+        background-color: bisque;
+        height: 20vh;
+        position: absolute;
+        margin: auto;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #button-element {
+        padding: 5px 10px;
+        background-color: #fa0;
+        color: #000;
+        cursor: pointer;
+        display: block;
+        margin-inline: auto;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #type-input {
+        display: none;
+      }
+      .counter-element {
+        display: none;
+      }
+      .snippet {
+        border: 1px solid black;
+        margin-block: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-inline: 10vw;
+      }
+      .snippet h3 {
+        cursor: pointer;
+      }
+      .snippet p {
+        margin-top: 10px;
+        display: none;
+      }
+      .snippet p.show-answer {
+        display: block;
+      }
+      .align-center {
+        text-align: center;
+        margin-block: 10px;
+      }
+      .q-and-a {
+        padding: 10px 0;
+      }
+      .switch-toggle {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-section">
+      <h1 class="align-center">JavaScript Interview Questions</h1>
+      <div class="switch-toggle">
+        <i class="fa-solid fa-moon"></i>
+      </div>
+      <div class="section-parent">
+            <p style="position: absolute; top: 0; z-index: 2;">section-parent</p>
+            <div class="first-parent">
+                <p style="position: absolute; top: 0;">first-parent</p>
+                <a id="button-element">button-element</a>
+            </div>
+        </div>
+
+      <ul id="listElementsParent">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <input type="text" id="type-input">
+      <div class="counter-element">
+        <button class="increase-counter">+</button>&nbsp;<span class="text-content-counter"></span>&nbsp;<button class="decrease-counter">-</button>
+      </div>
+      <section>
+        <div class="q-and-a">
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
