@@ -1,0 +1,13 @@
+.radio-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d8d7d7;
+    border-radius: 10px;
+}
+.radio-buttons input, label {
+    cursor: pointer;
+}
