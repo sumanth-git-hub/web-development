@@ -1,0 +1,25 @@
+.form-component {
+    margin-top: 20px;
+}
+form div {
+    margin-bottom: 10px;
+}
+.input-error {
+    border: 1px solid red;
+    outline: 2px solid red;
+}
+.error-text {
+    color: red;
+}
+.navigation-component {
+    display: flex;
+    gap: 10px;
+}
+.yesActive {
+    text-decoration: 1px dotted blue underline;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fa0;
+    font-weight: 800;
+}
